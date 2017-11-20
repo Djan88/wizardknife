@@ -1,0 +1,935 @@
+/**
+ *
+ * -------------------------------------------
+ * Basic template CSS file
+ * -------------------------------------------
+ *
+ **/
+ 
+/*
+ *
+ * 1. Global elements
+ *
+ *
+------------------------------------ */
+ 
+/* 1.1. Base document elements
+==================================== */
+
+* {
+	outline: none!important;
+}
+
+html {
+	background: #fff url('../images/bg.png') repeat 0 0;
+	-webkit-font-smoothing: antialiased;
+	min-height: 100%;
+}
+
+body { 
+	background: transparent url('../images/bg_desktop.jpg') no-repeat center top;
+	color: #666;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+	margin: 0;
+	min-height: 100%;
+	padding: 50px 0 10px 0;
+	-ms-word-wrap: break-word;
+		word-wrap: break-word;
+}
+
+body[data-mobile="true"] #main-menu-mobile select {
+    font-size: 50px;
+}
+
+/* 1.2. Base typography elements
+==================================== */
+
+a,
+#gk-mainbody a:active,
+#gk-mainbody a:focus,
+#gk-mainbody a:hover,
+#gk-mainbody h1 a,
+#gk-mainbody h2 a {
+	color: #000;
+	-webkit-transition: color 0.2s linear;
+	   -moz-transition: color 0.2s linear;
+	     -o-transition: color 0.2s linear;
+	        transition: color 0.2s linear;
+	text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus,
+#gk-mainbody a,
+#gk-mainbody h1 a:active,
+#gk-mainbody h1 a:focus,
+#gk-mainbody h1 a:hover,
+#gk-mainbody h2 a:active,
+#gk-mainbody h2 a:focus,
+#gk-mainbody h2 a:hover,
+#gk-sidebar .box a:hover {
+	color: #ff7e57;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #000;
+	font-weight: 400;
+	letter-spacing: -1px;	
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2,
+.page-title {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 17px;
+}
+
+h6 {
+	font-size: 13px;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+ul li,
+ol li {
+	line-height: 2.0;
+}
+
+p {
+	margin: 0.5em 0 1.5em;
+}
+
+table td {
+	vertical-align: top;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+.box ul ul,
+.box ol ol {
+	margin: 0;
+	padding: 0 0 0 20px;
+}
+
+/* 1.3. Base form elements
+==================================== */
+
+/* buttons */
+.btn,
+button,
+.woocommerce a.button,
+.readon,
+.nav-btn a,
+.more-link,
+.gk-button,
+a.gk-button,
+input[type="button"],
+input[type="submit"] {
+	background: #000;
+	border: none;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff!important;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 14px;
+	font-weight: 400;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 5px 2px 2px;
+	padding: 0 15px;
+	text-align: center;
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+}
+
+.btn:hover,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled],
+.nav-btn a:active,
+.nav-btn a:focus,
+.nav-btn a:hover,
+.woocommerce a.button:hover,
+.woocommerce a.button:active,
+.woocommerce a.button.active,
+.woocommerce a.button:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+button.disabled,
+input[type="button"].disabled,
+input[type="submit"].disabled,
+a.gk-button:hover,
+a.gk-button:active,
+a.gk-button.active,
+a.gk-button.disabled,
+a.gk-button[disabled],
+.readon:hover,
+.readon:active,
+.readon:focus,
+.btn:focus,
+button:focus,
+a.gk-button:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+.more-link:active,
+.more-link:focus,
+.more-link:hover {
+ 	background: #ff7e57;
+ 	color: #fff!important;
+}
+
+/* input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"],
+textarea  {
+	border: 1px solid #e5e5e5;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #9c9c9c;
+	font-size: 12px;
+	font-weight: 400;
+	height: 34px;
+	max-width: 100%!important;
+	padding: 0 15px
+}
+
+textarea {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	height: auto;
+	max-width: 100%!important;
+	padding: 24px
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="url"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+	background: #fffef4;
+}
+
+label {
+	color: #333;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+select {
+	border: 1px solid #e5e5e5;
+	height: inherit;
+	max-width: 100%;
+	padding: 6px
+}
+
+/* 1.4. Base other elements
+==================================== */
+
+article {
+	margin: 0;
+}
+
+.tag-page article,
+.category-page article,
+.search-page article,
+.archive article,
+.page-template-template-latest-php article,
+.home .gk-is-homepage article,
+.home #gk-mainbody article {	
+	border-top: 1px solid #e5e5e5;
+	margin-top: 38px;
+	padding-top: 24px;
+}
+
+.tag-page article:first-child,
+.category-page article:first-child,
+.search-page article:first-child,
+.archive article:first-child,
+.page-template-template-latest-php article:first-child,
+.home .gk-is-homepage article:first-child,
+.home #gk-mainbody article:first-child {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+/* 1.5. Base CSS classes
+==================================== */
+
+/*
+ *
+ * 2. Template containers
+ *
+ *
+------------------------------------ */
+
+.gk-page-wrapper {
+	background: #fff;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+	box-shadow: 0 0 10px rgba(0, 0, 0, .12);
+	position: relative;
+}
+
+.gk-page-wrap {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 50px;
+}
+
+.gk-page {
+	margin: 0 auto;
+	width: 100%; 
+}
+
+#gk-mainbody-columns {
+	background: #fff;
+	display: block;
+	padding: 35px 0;
+	width: 100%;
+}
+
+#gk-mainbody-columns.gk-content-top-border {
+	border-top: 1px solid #efefef;
+}
+
+#gk-mainbody-columns > section {
+	border-right: 1px solid #efefef;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0 40px 0 0;
+}
+
+#gk-mainbody-columns > aside {
+	background: #fff;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	padding: 0 0 0 40px;
+}
+
+#gk-mainbody-columns.gk-column-left > section {
+	border-left: 1px solid #efefef;
+	border-right: none;
+	float: right;
+	padding: 0 0 0 40px;
+}
+
+#gk-mainbody-columns.gk-column-left > aside {
+	float: left;
+	padding: 0 40px 0 0;
+}
+
+#gk-mainbody-columns.gk-content-no-sidebar > section {
+	border-left: none;
+	border-right: none;
+	padding: 0;
+}
+
+/*
+ *
+ * 3. Template structure
+ *
+ *
+------------------------------------ */
+ 
+/* 3.1. Top
+==================================== */
+
+#gk-top {
+	overflow: hidden;
+	padding: 24px 14px;
+}
+
+#gk-search {
+	float: none;
+	margin: -2px auto 0 auto;
+	max-width: 350px;
+}
+
+#gk-search #s {
+	background: transparent url('../images/style1/search_bg.png');
+	background-position: right center!important;
+	background-repeat: no-repeat!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	width: 350px;
+}
+
+#top-menu {
+	float: right;
+	margin-top: 5px;
+}
+
+#top-menu li {
+	float: left;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 12px;
+}
+
+#top-menu li a {
+	color: #666;
+	margin: 0 10px 0 14px;
+}
+
+#top-menu li::before {
+	background: #d1d1d1;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	content: "";
+	display: block;
+	height: 4px;
+	position: relative;
+	top: 8px;
+	width: 4px;
+}
+
+#top-menu li a:active,
+#top-menu li a:focus,
+#top-menu li a:hover {
+	color: #ff7e57;
+}
+
+#top-menu li:first-child::before {
+	visibility: hidden;
+}
+
+/* Button Cart */
+#btn-cart {
+	background: transparent url('../images/cart_shadow.png');
+	background-position: 36px center!important;
+	background-repeat: no-repeat!important;
+	height: 72px;
+	position: absolute;
+	right: -36px;
+	top: 20px;
+	-webkit-transition: top .45s cubic-bezier(.4,1.26,.85,1.22);
+	-moz-transition: top .45s cubic-bezier(.4,1.26,.85,1.22);
+	-ms-transition: top .45s cubic-bezier(.4,1.26,.85,1.22);
+	-o-transition: top .45s cubic-bezier(.4,1.26,.85,1.22);
+	transition: top .45s cubic-bezier(.4,1.26,.85,1.22);
+	width: 72px;
+	z-index: 1001;
+}
+
+#btn-cart > strong {
+	background: #ff7e57 url('../images/cart_white.png') no-repeat center center;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	height: 46px;
+	margin: 13px;
+	text-indent: -9999px;
+	-webkit-transition: all .15s ease-out;
+	-moz-transition: all .15s ease-out;
+	-ms-transition: all .15s ease-out;
+	-o-transition: all .15s ease-out;
+	transition: all .15s ease-out;
+	width: 46px;
+}
+
+#btn-cart:hover > strong {
+	background-color: #000;
+}
+
+#btn-cart.loading > strong {
+	background-image: url('../images/style1/cart_loader.gif');
+}
+
+#btn-cart.loading:hover > strong {
+	background-image: url('../images/style1/cart_loader_dark.gif');
+}
+
+/* 3.2. Header
+==================================== */
+
+#gk-head {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 42px 50px 15px 50px;
+	width: 100%;
+}
+
+#gk-head.gk-absolute-head {
+	position: absolute;
+	z-index: 1000;
+}
+
+#gk-head:after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+#gk-head h1 {
+	margin: 0;
+}
+
+#gk-head + .gk-is-homepage {
+	margin-top: 70px;
+}
+
+/* Logo */
+
+#gk-header-nav h2 {
+    float: left;
+}
+
+a.cssLogo {
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0;
+	text-indent: -9999px;
+}
+
+a.cssLogo {
+	background: transparent url('../images/logo.png') no-repeat 0 0;
+	/* You can specify there logo size and background */
+	height: 30px;
+	width: 154px;
+}
+
+#gk-head a.textLogo {
+	color: #000;
+	display: block;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 24px;
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	text-indent: 0;
+	text-transform: uppercase;
+}
+
+#gk-head a.textLogo small {
+	color: #000;
+	display: block;
+	font-size: 10px;
+	line-height: 10px;
+}
+
+/* Header */
+
+#gk-head .box{
+	margin: 0;
+	padding: 0;
+}
+
+#gk-header-mod {
+	clear: both;
+	padding: 0 0 15px 0;
+}
+
+#gk-header-mod .box {
+	margin: 0;
+	padding: 0;
+}
+
+#gk-header-mod.gk-bottom-margin .box {
+	margin-bottom: -200px;
+}
+
+/* Header Bottom */
+#gk-header-bottom {
+	background: #fff;
+	position: relative;
+	z-index: 101;
+}
+
+#gk-header-bottom .box {
+	margin: 0;
+	padding: 26px 32px 0 32px;
+}
+
+/* 3.3. Content
+==================================== */
+
+section.intro {
+	font-size: 110%;
+	padding: 0;
+}
+
+.box::after,
+article::after,
+#respond::after,
+#gk-top1::after,
+#gk-top2::after,
+#gk-footer::after,
+#gk-bottom1::after,
+#gk-bottom2::after,
+#gk-mainbody::after,
+#gk-mainbody-columns::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+section.content::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+#gk-mainbody .box,
+#gk-mainbody-top .box,
+#gk-mainbody-bottom .box {
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+#gk-mainbody .box:first-child,
+#gk-mainbody-top .box:first-child,
+#gk-mainbody-bottom .box:first-child {
+	margin-top: 0;
+}
+
+#gk-mainbody-top {
+	padding: 0 0 30px 0;
+}
+
+#gk-mainbody-bottom {
+	padding: 30px 0 0 0;
+}
+
+/* 3.4. Sidebar
+==================================== */
+
+/* 3.5. Bottom
+==================================== */
+
+#gk-bottom1,
+#gk-bottom2 {
+	background: #f9f9f9;
+	border-top: 1px solid #efefef;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 50px 50px 65px 50px;
+}
+
+#gk-bottom1 .box,
+#gk-bottom2 .box {
+	color: #666;
+	font-size: 13px;
+}
+
+#gk-bottom1 .box .box-title,
+#gk-bottom2 .box .box-title {
+	color: #000;
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 0.4px;
+	line-height: 16px;
+	margin: 8px 0 28px 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+#gk-bottom1 .box li,
+#gk-bottom2 .box li {
+	border: none;
+	color: #929292;
+	font-size: 13px;
+	line-height: 24px;
+	padding: 0;
+}
+
+#gk-bottom1 .box li a,
+#gk-bottom2 .box li a {
+	color: #929292;
+}
+
+#gk-bottom1 .box li a:active,
+#gk-bottom1 .box li a:focus,
+#gk-bottom1 .box li a:hover,
+#gk-bottom2 .box li a:active,
+#gk-bottom2 .box li a:focus,
+#gk-bottom2 .box li a:hover {
+	color: #ff7e57;
+}
+
+/* Address block */
+.box address {
+	color: #666;
+	font-size: 14px;
+	font-style: normal;
+}
+
+.box address p {
+	margin: 0;
+}
+
+/* 3.6. Footer
+==================================== */
+
+#gk-footer {
+	border-top: 1px solid #efefef;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #929292;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 0 50px;
+}
+
+#gk-footer a {
+	color: #666;
+}
+
+#gk-footer a:active,
+#gk-footer a:focus,
+#gk-footer a:hover {
+	color: #ff7e57;
+}
+
+#footer-menu {
+	float: left;
+	line-height: 32px;
+	margin: 0;
+	padding: 19px 0;
+}
+
+#footer-menu li {
+	float: left;
+	margin-right: 12px;
+}
+
+#footer-menu li a {
+	color: #929292;
+} 
+
+#footer-menu li a:active,
+#footer-menu li a:focus,
+#footer-menu li a:hover {
+	color: #ff7e57;
+}
+
+#footer-menu ul {
+	display: none;
+}
+
+#gk-footer .gk-copyrights {
+	float: right;
+	margin: 0;
+	padding: 19px 0;
+}
+
+#gk-style-area {
+	clear: both;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.gk-framework-logo {
+	clear: both;
+	display: block;
+	float: none;
+	margin: 30px auto!important;
+	padding: 0!important;
+}
+
+/* Style switcher */
+#gk-style-area {
+	clear: both;
+	display: block;
+	line-height: 10px;
+	margin: 20px 0 40px 0;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#gk-style-area a {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: inline-block;
+	height: 10px;
+	margin: 15px 0 0 5px;
+	text-indent: -9999px;
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transition: -webkit-transform 0.2s ease-out;
+	-moz-transition: -moz-transform 0.2s ease-out;
+	-o-transition: -o-transform 0.2s ease-out;
+	transition: transform 0.2s ease-out;
+	width: 10px;
+}
+
+#gk-style-area a:first-child {
+	margin-left: 0;
+}
+
+#gk-style-area a:hover {
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+#gk-color1 {
+	background: #ff7e57;
+}
+
+#gk-color2 {
+	background: #56bfdc;
+}
+
+#gk-color3 {
+	background: #96a0d6;
+}
+
+/*
+ *
+ * 4. Widget styles
+ *
+ *
+------------------------------------ */
+ 
+/* 4.1. Base style
+==================================== */
+
+.box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0 10px;
+}
+
+#gk-mainbody-top .box,
+#gk-mainbody-bottom .box {
+	padding: 0;
+}
+
+/* 4.2. Base style for other areas
+==================================== */
+
+#gk-top1 .box,
+#gk-top2 .box,
+#gk-bottom1 .box,
+#gk-bottom2 .box {
+	float: left;
+}
+
+.widget-area .col1 { width: 100%; }
+.widget-area .col2 { width: 50%; }
+.widget-area .col3 { width: 33.3%; }
+.widget-area .col4 { width: 25%; }
+.widget-area .col5 { width: 20%; }
+.widget-area .col6 { width: 16.6%; }
+
+.widget-area .box.last1 { width: 100%; }
+.widget-area .box.last2 { width: 50%; }
+.widget-area .box.last3 { width: 33.3%; }
+.widget-area .box.last4 { width: 25%; }
+.widget-area .box.last5 { width: 20%; }
+
+.widget-area .nth1 {
+	clear: both;
+}
+
+/* 4.3. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: block!important;
+}
+
+.onlyTablets {
+	display: none!important;
+}
+
+.onlySmartphones {
+	display: none!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: none!important;
+}

@@ -1,0 +1,82 @@
+/**
+ *
+ * -------------------------------------------
+ * IE code fixes
+ * -------------------------------------------
+ *
+ **/
+
+/*
+ *
+ * 14. IE
+ *
+ *
+------------------------------------ */
+
+/* 14.1. IE8
+==================================== */
+
+.author-avatar img,
+#comments li article > aside img {
+	max-width: none!important;
+	width: auto!important;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"] {
+	line-height: 1.2!important;
+	padding-top: 8px!important;
+	padding-bottom: 8px!important;
+}
+
+
+.ie8clear {
+	clear: both;
+}
+
+#gk-mainbody article {
+	overflow: hidden;
+}
+
+article header h1,
+article header h2 {
+	clear: both;
+}
+
+#gk-menu-wrap {
+	border-bottom: 1px solid #eee;
+}
+
+.imageBg #gk-header-mod input[type="email"] {
+	width: 380px!important;
+}
+
+.gk-news-gallery,
+.gk-product-gallery {
+	overflow: hidden;
+}
+
+.gk-page-wrapper {
+	border: 1px solid #eee!important;
+}
+
+body .wc-product-overlay img.wp-post-image {
+	display: block!important;
+	height: auto!important;
+	width: auto!important;
+}
+
+/* image logo fix */
+.imageLogo img {
+	max-width: auto!important;
+	width: auto!important;
+}
+
+div.product form.cart .variations td,
+#content div.product form.cart .variations td {
+	clear: both;
+	width: 350px;
+}

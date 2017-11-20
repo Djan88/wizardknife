@@ -1,0 +1,11 @@
+[16-Jul-2015 13:29:15 UTC] База данных WordPress возвратила ошибку Specified key was too long; max key length is 1000 bytes в ответ на запрос 
+CREATE TABLE wp_woocommerce_tax_rate_locations (
+  location_id bigint(20) NOT NULL auto_increment,
+  location_code varchar(255) NOT NULL,
+  tax_rate_id bigint(20) NOT NULL,
+  location_type varchar(40) NOT NULL,
+  PRIMARY KEY  (location_id),
+  KEY tax_rate_id (tax_rate_id),
+  KEY location_type (location_type),
+  KEY location_type_code (location_type,location_code)
+) DEFAULT CHARACTER SET utf8mb4, выполненный activate_plugin, do_action('activate_woocommerce/woocommerce.php'), call_user_func_array, WC_Install::install, WC_Install::create_tables, dbDelta

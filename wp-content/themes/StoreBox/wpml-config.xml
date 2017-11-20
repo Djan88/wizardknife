@@ -1,0 +1,9 @@
+<wpml-config>
+    <admin-texts>
+        <key name="storebox_seo_description" />
+        <key name="storebox_seo_blogname" />
+        <key name="storebox_seo_homepage_desc_value" />
+        <key name="storebox_seo_homepage_keywords_value" />
+        <key name="storebox_template_footer_content" />
+    </admin-texts>   
+</wpml-config>

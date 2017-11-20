@@ -1,0 +1,31 @@
+/**
+ *
+ * -------------------------------------------
+ * IE code fixes
+ * -------------------------------------------
+ *
+ **/
+
+/*
+ *
+ * 14. IE
+ *
+ *
+------------------------------------ */
+
+/* 14.2. IE9
+==================================== */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="www"],
+input[type="tel"] {
+	line-height: 1.2!important;
+}
+
+div.product form.cart .variations td,
+#content div.product form.cart .variations td {
+	clear: both;
+	width: 350px;
+}

@@ -1,0 +1,418 @@
+/**
+ *
+ * -------------------------------------------
+ * WP Extensions CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 8. Additional WP extensions styles
+ *
+ *
+------------------------------------ */
+
+/* 8.1. Archives widget
+==================================== */
+
+.widget_archive li {
+	border: none!important;
+	font-size: 11px;
+	padding: 2px 0;
+}
+
+.widget_archive li a {
+	color: #000;
+	font-size: 16px;
+	line-height: 32px;
+	padding-right: 4px;
+}
+
+.widget_archive li a:active,
+.widget_archive li a:focus,
+.widget_archive li a:hover {
+	color: #ff7e57;
+}
+
+/* 8.2. Custom menu widget
+==================================== */
+
+/* 8.3. Pages widget
+==================================== */
+
+/* 8.4. RSS widget
+==================================== */
+
+.box h3.box-title .rsswidget {
+	clear: none;
+	float: left;
+	font-size: 20px;
+	margin-right: 10px;
+}
+
+.box .rsswidget {
+	clear: both;
+	display: block;
+	font-size: 16px;
+	line-height: 1.6;
+	margin-top: 20px;
+}
+
+.box .rss-date {
+	clear: both;
+	display: block;
+	font-size: 14px;
+	font-style: italic;
+	margin-top: -5px;
+	text-align: right;
+}
+
+.box .rssSummary {
+	clear: both;
+	color: #888;
+	font-size: 14px;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+
+.widget_rss cite {
+	font-size: 14px;
+}
+
+/* 8.5. Text widget
+==================================== */
+
+#gk-header .box.widget_text {
+	padding: 0!important;
+}
+
+#gk-header .box.widget_text img {
+	height: auto;
+	max-width: 100%;
+}
+
+/* 8.6. Calendar widget
+==================================== */
+
+.box #wp-calendar {
+	background: #fff;
+	width: 100%;
+}
+
+.box #wp-calendar caption {
+	background: #fff;
+	border: 1px solid #eee;
+	font-size: 13px;
+	font-weight: normal;
+	padding: 5px 0;
+}
+
+.box #wp-calendar th {
+	background: #333;
+	color: #fff;
+	font-weight: normal;
+	padding: 5px 0;
+}
+
+.box #wp-calendar td {
+	border: 1px solid #eee;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.box #wp-calendar td a {
+	font-weight: bold;
+}
+
+
+/* 8.7. Links widget
+==================================== */
+
+.box ul.xoxo a {
+	display: block;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.box ul.xoxo a img {
+	vertical-align: middle;
+}
+
+.box ul.xoxo li {
+	font-size: 10px;
+	padding: 5px 0;
+}
+
+/* 8.8. Recent comments widget
+==================================== */
+
+/* 8.9. Search widget
+==================================== */
+ 
+.box #searchform label,
+.box #searchform #searchsubmit {
+	display: none;
+}
+
+.box #searchform .field {
+	width: 100%;
+}
+ 
+/* 8.10. Categories widget
+==================================== */
+
+/* 8.11. Meta widget
+==================================== */
+
+/* 8.12. Recent posts widget
+==================================== */
+
+/* 8.13. Tag cloud widget
+==================================== */
+
+.box.tags .tagcloud {
+	overflow: hidden;
+}
+
+.box.tags .tagcloud a {
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 15px!important;
+	padding: 5px 10px 5px 0;
+}
+
+.box.tags .tagcloud a:active,
+.box.tags .tagcloud a:focus,
+.box.tags .tagcloud a:hover {
+	color: #ff7e57;
+}
+
+/* 8.14. Common widget styles
+==================================== */
+
+/* Modules */
+.box {
+	font-size: 16px;
+	line-height: 1.6;
+	margin-bottom: 25px;
+}
+
+.box ul {
+	clear: both;
+	list-style-type: none;
+	margin: 0;
+}
+
+.box ul li {
+	line-height: 2.0;
+	padding: 2px 0;
+}
+
+.box .box-title {
+	color: #000;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 32px;
+	padding: 0 0 10px 0;
+	text-transform: uppercase
+}
+
+.box .box-title em {
+	font-style: italic;
+}
+
+.box .box-title strong {
+	font-weight: 700;
+}
+
+#gk-sidebar .box {
+	padding: 0 0 10px 0;
+}
+
+/* Style bigtitle */
+.box.bigtitle .box-title {
+	font-size: 32px!important;
+	line-height: 42px!important;
+	font-weight: 300!important;
+	margin-bottom: 18px;
+	margin-top: 0!important;
+	text-transform: none!important;
+}
+
+/* Style advertisement */
+.box.advertisement .box-title {
+	background: transparent;
+	border-bottom: 1px solid #eee;
+	color: #bbb;
+	font-family: Arial, Verdana, sans-serif!important;
+	font-size: 10px;
+	font-weight: 300;
+	letter-spacing: normal;
+	line-height: 16px;
+	margin: 0 0 12px 0;
+	min-height: 21px;
+	padding: 0;
+	text-align: right;
+}
+
+/* Style pagetitle */
+.box.pagetitle h1 {
+	font-size: 36px;
+	font-weight: 400;
+	margin: 20px 0 0 0!important;
+	padding: 10px 0 40px 0;
+}
+
+.box.pagetitle h1 small {
+	clear: both;
+	color: #999;
+	display: block;
+	font-size: 18px;
+	font-style: italic;
+	font-weight: 300;
+	margin: 10px 0 0 0;
+}
+
+/* Style clear */
+.box.clear {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.box.clear .box-title {
+	display: none;
+}
+
+/* Style light */
+.box.light {
+	background: #f8f8f8;
+	padding: 20px!important;
+}
+
+/* Style dark */
+.box.dark {
+	background: #000!important;
+	color: #aaa;
+	padding: 20px!important;
+}
+
+.box.dark .box-title {
+	background: transparent!important;
+	line-height: 1.2;
+}
+
+.box.dark h1,
+.box.dark h2,
+.box.dark h3,
+.box.dark h4,
+.box.dark h5,
+.box.dark h6 {
+	color: #eee;
+}
+
+.box.dark ul {
+	margin: 0;
+	padding: 0;
+}
+
+.box.dark ul li {
+	border-top: 1px solid #333;
+	position: relative;
+}
+
+.box.dark ul li:first-child {
+	border-top: none;
+}
+
+.box.dark a {
+	color: #ddd!important;
+}
+
+.box.dark a:active,
+.box.dark a:focus,
+.box.dark a:hover {
+	color: #ff7e57!important;
+}
+
+.box.dark ul ul {
+	margin: 0 0 0 20px;
+}
+
+/* Style menu */
+.box.menu ul ul {
+	margin-left: 0
+}
+.box.menu li {
+	border: none!important;
+	line-height: 1.6;
+	padding: 2px 0;
+}
+.box.menu li:before { 
+	background: #d1d1d1;
+	border-radius: 4px;
+	content: "";
+	display: block;
+	height: 5px;
+	position: relative;
+	top: 15px;
+	width: 5px
+}
+.box.menu .header + .content ul li:first-child {
+	border-top: none;
+}
+.box.menu li a {
+	display: inline-block;
+	padding: 0 0 0 18px
+}
+
+/* Suffix double */
+.box.double.col2,
+.box.double.col6.last2 {
+	width: 75%;
+}
+
+.box.double.col2 ~ .box.col2,
+.box.double.col6.last2 ~ .box.col6.last2 {
+	width: 25%;
+}
+
+.box.double.col3,
+.box.double.col6.last3 {
+	width: 66.66%;
+}
+
+.box.double.col3 ~ .box.col3,
+.box.double.col6.last3 ~ .box.col6.last3 {
+	width: 16.66%;
+}
+
+.box.double.col4,
+.box.double.col6.last4 {
+	width: 50%;
+}
+
+.box.double.col4 ~ .box.col4,
+.box.double.col6.last4 ~ .box.col6.last4 {
+	width: 16.66%;
+}
+
+.box.double.col5,
+.box.double.col6.last5 {
+	width: 40%;
+}
+
+.box.double.col5 ~ .box.col5,
+.box.double.col6.last5 ~ .box.col6.last5 {
+	width: 15%;
+}
+
+.box.double.col6 {
+	width: 33.32%;
+}
+
+.box.double.col6 ~ .box.col6 {
+	width: 13.33%;
+}

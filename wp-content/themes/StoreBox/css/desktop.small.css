@@ -1,0 +1,61 @@
+/**
+ *
+ * -------------------------------------------
+ * Small Desktop CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 10. Small Desktop code
+ *
+ *
+------------------------------------ */
+ 
+/* 10.1. Base elements
+==================================== */ 
+
+body {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+body[data-cart="true"] {
+	padding-right: 36px;
+}
+
+#gk-search #s {
+	width: 300px;
+}
+
+#gk-head {
+	padding: 42px 30px 15px 30px;
+}
+
+.gk-page-wrap {
+	padding: 0 30px;
+}
+
+#gk-footer {
+	text-align: center;
+}
+
+#footer-menu,
+.gk-copyrights {
+	clear: both;
+	display: block;
+	float: none!important;
+	margin: 10px auto;
+	padding: 10px 0 0 0;
+	overflow: hidden;
+}
+
+.gk-copyrights {
+	margin-top: 0;
+	padding: 10px 0 20px 0;
+}
+
+#footer-menu {
+	display: inline-block;
+}

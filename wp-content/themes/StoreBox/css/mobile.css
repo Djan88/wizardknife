@@ -1,0 +1,562 @@
+/**
+ *
+ * -------------------------------------------
+ * Mobile CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 13. Mobile code
+ *
+ *
+------------------------------------ */
+ 
+/* 13.1. Base elements
+==================================== */ 
+
+body {
+	padding: 10px 5px 30px 5px!important;
+}
+
+/* archive / page 404 */
+.page404 .widget,
+.archivepage .widget {
+	margin: 0!important;
+	width: 100%!important;
+}
+
+/* images fix */
+#gk-mainbody img {
+	height: auto!important;
+	max-width: 100%!important;
+}
+
+/* column rules */
+#gk-sidebar {
+	padding: 20px 0!important;
+}
+
+#gk-sidebar .box {
+	float: none!important;
+	width: 100%!important;
+}
+
+#gk-bottom1 .box,
+#gk-bottom2 .box  {
+	margin-bottom: 20px;	
+}
+
+#gk-sidebar .box {
+	float: none;
+	margin-top: 0!important;
+	margin-bottom: 12px!important;
+	width: 100%;
+}
+
+#gk-sidebar .box:nth-child(2n+1) {
+	clear: both!important;
+}
+
+#gk-sidebar .box:nth-child(odd) {
+	padding-right: 0px;	
+}
+
+#gk-sidebar .box:nth-child(even) {
+	padding-left: 0px;
+}
+
+.widget-area .col1,
+.widget-area .col2,
+.widget-area .col3,
+.widget-area .col4,
+.widget-area .col5,
+.widget-area .col6,
+.widget-area .box.last1,
+.widget-area .box.last2,
+.widget-area .box.last3,
+.widget-area .box.last4,
+.widget-area .box.last5 { 
+	float: none!important;
+	margin: 0 auto 20px auto!important; 
+	max-width: 320px; 
+	width: 100%!important; 
+}
+
+.widget-area .nth1,
+.widget-area .nth2,
+.widget-area .nth3,
+.widget-area .nth4,
+.widget-area .nth5,
+.widget-area .nth6 {
+	clear: both;
+}
+
+body #gk-page .box {
+	margin-bottom: 20px!important;
+}
+
+#footer-menu li {
+	float: none;
+}
+
+.gk-columns > div {
+	padding: 5px 0!important;
+	width: 100%!important;
+}
+
+/* 13.2. Structure elements
+==================================== */
+
+#gk-search {
+	margin-top: 5px;
+}
+
+#main-menu-mobile {
+	margin-top: 61px;
+}
+
+#top-menu {
+	clear: left;
+	float: left;
+	margin: 10px 0;
+}
+
+#top-menu li {
+	margin: 0 5px 0 0!important;
+}
+
+#top-menu li a {
+	margin: 0;
+}
+
+#top-menu li::before {
+	display: none;
+}
+
+#gk-breadcrumb-fontsize {
+	margin-bottom: 20px;
+}
+
+/* 13.3. Posts
+==================================== */
+
+h1,
+#gk-mainbody article > header h1 {
+	font-size: 24px!important;
+	line-height: 1.2!important;
+	padding: 18px 0 0px;
+}
+
+body h2, 
+body .pagetitle {
+	font-size: 22px!important;
+	line-height: 1.2!important;
+}
+
+body h3 {
+	font-size: 24px;
+}
+
+body h4 {
+	font-size: 20px;
+}
+
+body h5 {
+	font-size: 16px;
+}
+
+body h6 {
+	font-size: 14px;
+}
+
+body #gk-social-api {
+	overflow: hidden;
+}
+
+.author-info > div {
+	padding: 0;
+}
+
+.author-info > aside {
+	margin: 0 0 20px 0;
+	position: static;
+}
+
+article header ul {
+	margin-left: -4px;
+} 
+
+article header .edit,
+article header .bookmark {
+	float: right;
+}
+
+#comments li article > .content {
+	margin: 0;
+}
+
+#comments li article > aside {
+	position: static;
+	margin: 0 20px 20px 0;
+	float: left;
+}
+
+#comments article header {
+	float: right;
+}
+
+#comments article header > a,
+#comments article header > span {
+	clear: both;
+	display: block;
+	float: left!important;
+	margin: 5px 0!important;
+}
+
+#comments article p {
+	clear: both;
+}
+
+#comments li article > aside img {
+	margin: 10px 0 0 10px;
+}
+
+/* Gallery page */
+#gallery figcaption {
+	display: none;
+}
+
+.gallery .gallery-item {
+	clear: both;
+	float: none;
+	width: 100%!important;
+}
+
+/* 13.4. Other elements
+==================================== */
+
+/* Popups */
+.gk-popup {
+	margin-left: -150px;
+	width: 300px;
+}
+
+/* GK NSP */
+.gk-nsp .gk-nsp-art {
+	border-top: 1px solid #eee!important;
+	border-left: none!important;
+	padding-bottom: 20px!important;
+	padding-top: 20px!important;
+	width: 100%!important;
+}
+.gk-nsp .gk-nsp-art:first-child {
+	border-top: none!important;
+}
+
+.gk-nsp-arts,
+.gk-nsp-links-wrap {
+	clear: both;
+	float: left!important;
+	width: 100%!important;
+}
+
+/* GK Tabs */
+.gk-tabs-nav {
+	border: 1px solid #e5e5e5!important;
+	border-bottom: none!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+	width: 100%;
+}
+
+body .gk-tabs-wrap > ol.gk-tabs-nav li,
+body .gk-tabs-wrap > ol.gk-tabs-nav li.active,
+body .gk-tabs-wrap > ol.gk-tabs-nav li.active:hover {
+	border: none!important;
+	border-bottom: 1px solid #e5e5e5!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+}
+
+/* GK Image Show and other widgets */
+#gk-header-mod {
+	overflow: hidden;
+}
+
+#gk-header-mod.gk-bottom-margin .box {
+	margin-bottom: 0;
+}
+
+.gk-is-wrapper-gk-storebox {
+	margin: 140px 0 0 0;
+	min-height: 120px;
+}
+
+.gk-is-wrapper-gk-storebox .gk-is-overlay {
+	background-image: url('../images/header_gradient_mobile.png');
+}
+
+.gk-news-gallery {
+	padding: 10px 0;
+}
+
+.gk-news-gallery > a {
+	display: none;
+}
+
+.gk-product-gallery.gk-pagination {
+	padding: 0;
+}
+
+.gk-product-gallery.gk-pagination > a {
+	display: none;
+}
+
+#gk-header-bottom .box {
+	padding: 0 6px;
+}
+
+.gk-product-gallery .gk-add-to-cart a {
+	background-position: 0 center;
+}
+
+/* Typography */
+body pre, 
+body pre.gk-code {
+	font: normal .65em/20px 'Curier New', monospace!important;
+	padding: 16px 20px!important;	
+}
+
+.gk-columns > div {
+	clear: both;
+	padding: 0 0 15px 0!important;
+	width: 100%;
+}
+
+.gk-price-table {
+	padding: 20px 0;
+}
+
+.gk-price-table dl {
+	margin: 20px auto!important;
+	width: 100%!important;
+}
+
+/* 13.5. WooCommerce
+==================================== */
+.related ul.products li.product, 
+.related ul li.product, 
+.upsells.products ul.products li.product, 
+.upsells.products ul li.product,
+ul.products li.product {
+	clear: both;
+	float: none;
+	margin: 10px 0;
+	width: 100%!important;
+}
+
+div.product div.images,
+#content div.product div.images,
+div.product div.summary, 
+#content div.product div.summary {
+	clear: both;
+	float: none;
+	margin: 10px 0;
+	width: 100%!important;	
+}
+
+div.product .woocommerce-tabs ul.tabs, 
+#content div.product .woocommerce-tabs ul.tabs {
+	border: 1px solid #e5e5e5;
+	border-bottom: none;
+	margin: 20px 0;
+	padding: 0;
+}
+
+.woocommerce-tabs {
+	overflow: hidden;
+}
+
+div.product .woocommerce-tabs ul.tabs li, 
+#content div.product .woocommerce-tabs ul.tabs li {
+	border: none!important;
+	border-bottom: 1px solid #e5e5e5!important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
+	width: 100%;
+}
+
+#reviews #comments ol.commentlist .comment-text {
+	padding: 0;
+}
+
+.woocommerce .panel.entry-content {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+div.product .woocommerce-tabs ul.tabs li a, 
+#content div.product .woocommerce-tabs ul.tabs li a {
+	display: block;
+	padding: 5px 0;
+}
+
+/*table.shop_attributes td {
+	width: 70%;
+}
+
+table.shop_attributes td:first-child {
+	width: 30%;
+}
+
+table.cart,
+table.cart thead, 
+table.cart tbody, 
+table.cart th, 
+table.cart td, 
+table.cart tr
+table.my_account_orders,
+table.my_account_orders thead, 
+table.my_account_orders tbody, 
+table.my_account_orders th, 
+table.my_account_orders td, 
+table.my_account_orders tr { 
+	display: block; 
+}
+
+td.desktop-hidden {
+	padding-left: 10px!important;
+}
+
+table.cart td,
+table.cart th,
+table.my_account_orders td,
+table.my_account_orders th { 
+  padding: 6px; 
+  text-align: left; 
+}
+	
+table.cart thead tr,
+table.my_account_orders thead tr { 
+	left: -9999px;
+	position: absolute;
+	top: -9999px;
+}*/
+
+/*table.cart td,
+table.my_account_orders td { 
+	padding-left: 50%!important; 
+	position: relative;
+	text-align: left!important;
+}
+
+td.desktop-hidden,
+table.cart td.desktop-hidden,
+table.my_account_orders td.desktop-hidden {
+	border: 0!important;
+	display: block;
+	float: left;
+	font-weight: bold;
+	padding-left: 5px!important;
+}
+
+table.cart td {
+	padding: 10px 5px;
+}*/
+
+table.cart td.actions .coupon .input-text,
+#content table.cart td.actions .coupon .input-text,
+table.cart td.actions .checkout-button,
+#content table.cart td.actions .checkout-button {
+	display: block;
+	margin: 10px 5px 10px 5px;
+}
+
+table.cart td.actions .checkout-button,
+#content table.cart td.actions .checkout-button {
+	float: left;
+}
+
+input[name="update_cart"],
+div.coupon input[name="apply_coupon"] {
+	margin: 10px 5px 0 5px;
+}
+
+input[name="update_cart"] {
+	float: left;
+}
+
+table.cart td.actions,
+#content table.cart td.actions,
+.my_account_orders td.order-actions {
+	overflow: hidden;
+	padding: 0;
+	text-align: right;
+}
+
+table.cart td.actions,
+#content table.cart td.actions {
+	margin-top: 10px;
+	padding-left: 0!important;
+}
+
+.my_account_orders td.order-actions {
+	padding: 6px 0;
+}
+
+table.shop_attributes th {
+	text-align: left;
+	width: 42%;
+}
+
+.cart-collaterals .cross-sells,
+.cart-collaterals .cart_totals {
+	float: none;
+	width: 100%;
+}
+
+.cart-collaterals .cross-sells ul.products li {
+	width: 90%!important;
+}
+
+.cart-collaterals .shipping_calculator {
+	width: 100%;
+}
+
+.col2-set .col-1,
+.col2-set .col-2 {
+	float: none;
+	width: 100%;
+}
+
+.woocommerce-result-count {
+	float: none;
+}
+
+/* 13.6. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: none!important;
+}
+
+.onlyTablets {
+	display: none!important;
+}
+
+.onlySmartphones {
+	display: block!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: block!important;
+}

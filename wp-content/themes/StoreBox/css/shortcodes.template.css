@@ -1,0 +1,137 @@
+/**
+ *
+ * --------------------------------------------------
+ * Shortcodes - template specific elements - CSS file
+ * --------------------------------------------------
+ *
+ **/
+
+/*
+ *
+ * 6. Shortcodes
+ *
+ *
+------------------------------------ */
+
+/* 6.3. Template specific elements
+==================================== */
+
+/* 
+ * Price table 
+ */
+
+.gk-price-table {
+	padding: 60px 2px 48px 2px;
+}
+.gk-price-table::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+.gk-price-table.col1 dl {
+	width: 100%;
+}
+.gk-price-table.col2 dl {
+	float: left;
+	width: 50%;
+}
+.gk-price-table.col3 dl {
+	float: left;
+	width: 33.3%;
+}
+.gk-price-table.col4 dl {
+	float: left;
+	width: 25%;
+}
+.gk-price-table.col5 dl {
+	float: left;
+	width: 20%;
+}
+.gk-price-table dl {
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	margin-left: -1px;
+	padding: 20px 32px;
+}
+.gk-price-table.gkWhite dl {
+	background: #f8f8f8;
+}
+.gk-price-table dt {
+	border-bottom: 1px solid #ddd;
+	color: #000;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 65px;
+	margin-top: -20px;
+	text-align: center;
+}
+.gk-price-table dd {
+	font-size: 16px;
+	font-weight: 36px;
+	margin: 0!important;
+	padding: 6px 0;
+	text-align: center;
+}
+.gk-price-table dd a {
+	background: #000;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	color: #fff!important;
+	display: inline-block;
+	font-size: 18px;
+	font-weight: 600;	
+	height: 46px;
+	line-height: 46px;
+	margin: 30px auto 20px;
+	padding: 0 36px;
+	-webkit-transition: background .3s ease-out;
+	-moz-transition: background .3s ease-out;
+	-ms-transition: background .3s ease-out;
+	-o-transition: background .3s ease-out;
+	transition: background .3s ease-out;	
+}
+.gk-price-table dd a:active,
+.gk-price-table dd a:focus,
+.gk-price-table dd a:hover,
+.gk-price-table .gk-premium dd a:active,
+.gk-price-table .gk-premium dd a:focus,
+.gk-price-table .gk-premium dd a:hover {
+	background: #f47953;
+	color: #fff!important;
+}
+.gk-price-table .gk-premium dd a {
+	background: #fff;
+	color: #000!important;
+}
+.gk-price-table dd.gk-price {
+	color: #000;
+	font-size: 60px;
+	font-weight: 600;
+}
+.gk-price-table dd.gk-price small {
+	color: #999;
+	font-size: 16px;
+	font-weight: 300;
+}
+.gk-price-table dl.gk-premium {
+	background: #000;
+	border-color: #000;
+	margin: -34px -10px 0 -10px;
+	position: relative;
+	z-index: 1;
+}
+.gk-price-table dl.gk-premium dt {
+	border-bottom: 1px solid #333; 
+	color: #fff;
+}
+.gk-price-table dl.gk-premium dd,
+.gk-price-table dl.gk-premium dd.gk-price small {
+	color: #fff;
+}
+.gk-price-table dl.gk-premium dd.gk-price {
+	font-size: 74px;
+}

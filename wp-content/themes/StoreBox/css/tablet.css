@@ -1,0 +1,280 @@
+/**
+ *
+ * -------------------------------------------
+ * Tablet CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 11. Tablet code
+ *
+ *
+------------------------------------ */
+ 
+/* 11.1. Base elements
+==================================== */ 
+
+#gk-search #s {
+	width: 200px;
+}
+
+/* sidebar */
+#gk-mainbody-columns {
+	display: block;
+}
+
+#gk-mainbody-columns > section,
+#gk-mainbody-columns > aside {
+	display: block;
+	overflow: hidden;
+	width: 100%!important;
+}
+
+#gk-mainbody-columns > section {
+	margin-bottom: 30px;
+}
+
+/* Archive page */
+.archivepage .widget.first {
+	margin-right: 2%;
+	margin-left: 0!important;
+}
+
+.archivepage .widget.first,
+.archivepage .widget.first + .widget {
+	margin-right: 0;
+	margin-left: 2%;
+	width: 48%;
+}
+
+.archivepage .widget.last {
+	margin: 0;
+	width: 100%;
+}
+
+.archivepage .widget ul {
+	margin-bottom: 30px;
+}
+
+/* images fix */
+#gk-mainbody img {
+	height: auto!important;
+	max-width: 100%!important;
+}
+
+/* column rules */
+#gk-sidebar .box {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	float: left;
+	margin-top: 0!important;
+	margin-bottom: 30px!important;
+	padding: 10px!important;
+	width: 50%;
+}
+#gk-sidebar {
+	padding: 0!important;
+}
+#gk-sidebar .box:first-child {
+	padding-top: 10px!important;
+}
+#gk-sidebar .box:nth-child(2n+1) {
+	clear: both!important;
+}
+.widget-area .col1 { width: 100%; }
+.widget-area .col2 { width: 50%; }
+.widget-area .col3 { width: 33.3%; }
+.widget-area .col4 { width: 50%; }
+.widget-area .col5 { width: 33.3%; }
+.widget-area .col6 { width: 33.3%; }
+
+.widget-area .box.last1 { width: 100%; }
+.widget-area .box.last2 { width: 50%; }
+.widget-area .box.last3 { width: 33.3%; }
+.widget-area .box.last4 { width: 50%; }
+.widget-area .box.last5 { width: 33.3%; }
+
+.widget-area .nth1 {
+	clear: both;
+}
+
+.widget-area .col6.last5.nth4,
+.widget-area .col6.last5.nth5 {
+	width: 50%;
+}
+
+#gk-mainbody-columns > section {
+	border-left: none!important;
+	border-right: none!important;
+	padding: 0!important;
+}
+
+#gk-bottom1,
+#gk-bottom2 {
+	padding: 20px 20px 35px 20px;
+}
+
+.gk-columns > div {
+	padding: 0 6px;
+}
+
+/* 11.2. Demo elements
+==================================== */
+
+/* Image Show */
+#gk-header-mod.gk-bottom-margin .box {
+	margin-bottom: -150px;
+}
+
+/* Product Gallery */
+.gk-product-gallery .gk-add-to-cart,
+.gk-product-gallery .gk-images-wrapper > div {
+	padding: 0 15px;
+}
+
+.gk-product-gallery .gk-add-to-cart a {
+	text-align: right;
+}
+
+.gk-product-gallery .gk-image .gk-img-overlay {
+	height: 100px;
+	margin: -50px 0 0 -50px;
+	width: 100px;
+}
+
+.gk-product-gallery .gk-image .gk-img-overlay span.amount {
+	margin-top: 28px;
+}
+
+/* News Blocks */
+.gk-news-blocks > figure > figcaption h3 {
+	font-size: 21px;
+}
+
+.gk-news-blocks > figure > figcaption {
+	padding: 0 10px 10px 10px;
+}
+
+/* News Gallery */
+.gk-news-gallery {
+	padding: 10px 24px;
+}
+
+/* 11.3. Main menu elements
+==================================== */ 
+
+#main-menu {
+	display: none;
+}
+
+#main-menu-mobile {
+	background: transparent url('../images/tablet_menu.png') no-repeat 0 0;
+	clear: both;
+	display: block!important;
+	float: right;
+	font-size: 18px;
+	height: 44px;
+	line-height: 44px;
+	margin: -6px 5px 0 5px;
+	position: relative;
+	text-indent: -9999px;
+	width: 44px;
+}
+
+#main-menu-mobile > select {	
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	height: 44px;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	width: 44px;
+}
+
+/* 11.4. Device classes
+==================================== */
+
+.onlyDesktop {
+	display: none!important;
+}
+
+.onlyTablets {
+	display: block!important;
+}
+
+.onlySmartphones {
+	display: none!important;
+}
+
+.onlyTabltetsAndSmartphones {
+	display: block!important;
+}
+
+/* 11.5. Responsive tables
+==================================== */
+
+@media (max-width: 600px) {
+	article section table:not(.woocommerce) {
+		border: 1px solid #eee;
+		border-bottom: none;
+		max-width: 100%!important;
+		width: 100%!important;
+	}
+
+	article section table thead {
+		display: none;
+	}
+
+	article section table:not(.woocommerce) td {
+		border-top: 1px solid #eee;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		clear: both;
+		display: block;
+		float: right;
+		padding: 5px 5px 5px 43%!important;
+		position: relative;
+		width: 100%;
+	}
+
+	article section table td:first-child {
+		border-top: none;
+	}
+
+	article section table:not(.woocommerce) tbody tr {
+		border-bottom: 2px solid #eee;
+	}
+
+	article section table td span.gk-table-label {
+		display: block;
+		font-size: 95%;
+		font-weight: bold;
+		left: 5px;
+		position: absolute;
+	}
+}
+
+/* 11.6. Woocommerce
+==================================== */
+
+table.shop_table td {
+	border-left: 0;
+	border-right: 0;
+}
+
+article section .woocommerce table tbody tr {
+	border: 0;
+}
+
+article section .woocommerce table {
+	border: 0;
+}
+
+article section .woocommerce table td:first-child {
+	border-top: 1px solid #eee;
+}

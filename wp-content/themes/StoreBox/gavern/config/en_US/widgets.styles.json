@@ -1,0 +1,37 @@
+[
+	{
+		"name": "Clear",
+		"css_class": "clear"
+	},
+	{
+		"name": "Light",
+		"css_class": "light",
+		"exclude": "widget_gk_comments"
+	},
+	{
+		"name": "Dark",
+		"css_class": "dark",
+		"exclude": "widget_gk_comments,widget_gk_nsp"
+	},
+	{
+		"name": "Menu",
+		"css_class": "menu"
+	},
+	{
+		"name": "Advertisement",
+		"css_class": "advertisement"
+	},
+	{
+		"name": "Big title",
+		"css_class": "bigtitle"
+	},
+	{
+		"name": "Unified style",
+		"css_class": "tags",
+		"for_only": "tag_cloud,product_tag_cloud"
+	},
+	{
+		"name": "Double",
+		"css_class": "double"
+	}
+]

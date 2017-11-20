@@ -1,0 +1,41 @@
+/*
+Theme Name: StoreBox
+Theme URI: http://gavick.com
+Description: e-Commerce WordPress Theme to create a successful online store! Convince customers to buy your products online, make purchasing simple and allow them to do the shopping through your WordPress website! As nowadays selling is conducted over electronic systems, create an outstanding online store and earn a fortune by running a business with StoreBox that will help you to achieve a success and increase the number of customers. This stylish e-Commerce WordPress Theme supports a WooCommerce plugin that allows to make purchase online. It's worth mentioning that Responsive Web Design support makes this e-Commerce theme more attractive and useful as it displays perfectly on any mobile devices!
+License: GNU GPL v.2.0
+License URI: LICENSE.txt
+Version: 1.3.2 (based on GavernWP 1.9.2)
+Author: GavickPro
+Author URI: http://gavick.com
+Tags: gray, two-columns, flexible-width
+*/
+
+/**
+ *
+ * Basic code convention:
+ *
+ * sel {
+ * // rules in the alphabetic order
+ * }
+ *
+ * Content of the CSS files
+ * 
+ * 0. Normalize CSS styles (normalize.css)
+ * 1. Global elements (template.css)
+ * 2. Template containers (template.css)
+ * 3. Template structure (template.css) 
+ * 4. Widget styles (template.css)
+ * 5. Wordpress elements styling (wp.css)
+ * 6. Shortcodes (shortcodes.*.css)
+ * 7. Template additional features styles (stuff.css)
+ * 8. Additional WP extensions styles (wp.extensions.css)
+ * 9. (optional) Additional 3rd party extensions styles (extensions.css)
+ * 9a. (optional) WooCommerce styling (woocommerce.css)
+ * 10. Small desktop code (desktop.small.css)
+ * 11. Tablet code (tablet.css)
+ * 12. Small Tablet code (tablet.small.css)
+ * 13. Mobile code (mobile.css)
+ * 14. IE code fixes (ie*.css)
+ * 15. Template colours and styles (style*.css)
+ * 16. (optional) Override for all CSS files (override.css)
+ **/

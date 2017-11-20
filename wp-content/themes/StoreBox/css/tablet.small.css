@@ -1,0 +1,161 @@
+/**
+ *
+ * -------------------------------------------
+ * Small Tablet CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 12. Small Tablet code
+ *
+ *
+------------------------------------ */
+ 
+/* 12.1. Base elements
+==================================== */ 
+
+body[data-cart="true"] {
+	padding-right: 10px;
+} 
+
+.gk-page-wrap {
+	padding: 0 20px;
+}
+
+article header h2 {
+	font-size: 32px;
+	line-height: 32px;
+}
+.gk-news-gallery .gk-images-wrapper > a { 
+	padding: 0 3px;
+}
+.gk-news-gallery .gk-images-wrapper > a img {
+	padding: 3px;
+}
+.gk-price-table dl {
+	padding: 20px 10px;
+}
+.gk-price-table dt {
+	font-size: 22px;
+}
+.gk-price-table dl.gk-premium dd.gk-price {
+	font-size: 40px;
+}
+.gk-price-table dl dd.gk-price {
+	font-size: 32px;
+}
+.gk-price-table dl.gk-premium dd {
+	padding: 5px 0;
+}
+.gk-price-table dd a {
+	margin: 10px 0;
+	padding: 0 20px;
+}
+.gk-price-table dl.gk-premium {
+	margin-top: -2px;
+}
+body .col6.box {
+	width: 50%!important;
+}
+body .col6.box:nth-child(2n+1) {
+	clear: both;
+}
+
+/* Image Show and NSP Portal Modes */
+.gk-is-wrapper-gk-storebox {
+	min-height: 200px;
+}
+
+#gk-header-mod.gk-bottom-margin .box {
+	margin-bottom: -50px;
+}
+
+.gk-is-wrapper-gk-storebox .gk-is-overlay {
+	background-image: url('../images/header_gradient_small_tablet.png');
+}
+
+.gk-is-wrapper-gk-storebox figcaption h1 {
+	font-size: 30px;
+}
+
+.gk-is-wrapper-gk-storebox figcaption h2 {
+	font-size: 20px;
+}
+
+.gk-is-wrapper-gk-storebox .gk-is-prev, 
+.gk-is-wrapper-gk-storebox .gk-is-next {
+	display: none;
+}
+
+.gk-news-blocks > figure {
+	margin-bottom: 0;
+	margin-top: 0;
+	width: 100%!important;
+}
+
+.gk-news-gallery .gk-images-wrapper > a {
+	width: 50%!important;
+}
+
+.gk-news-gallery .gk-images-wrapper.gk-images-cols1 > a {
+	width: 100%!important;
+}
+
+.gk-product-gallery .gk-images-wrapper.gk-images-cols3 > div,
+.gk-product-gallery .gk-images-wrapper.gk-images-cols4 > div,
+.gk-product-gallery .gk-images-wrapper.gk-images-cols5 > div,
+.gk-product-gallery .gk-images-wrapper.gk-images-cols6 > div,
+.gk-product-gallery .gk-images-wrapper.gk-images-cols7 > div,
+.gk-product-gallery .gk-images-wrapper.gk-images-cols8 > div {
+	width: 50%!important;
+}
+
+.gk-product-gallery .gk-images-wrapper > div:nth-child(2n+1) {
+    clear: both;
+}
+
+/* Top */
+#gk-head {
+	padding: 20px 20px 10px 20px;
+}
+
+#btn-cart {
+	background: none!important;
+	right: 10px;
+	top: 0!important;
+}
+
+#gk-search {
+	clear: left;
+	float: left;
+	margin-top: 20px;
+}
+
+#gk-search #s {
+	background: #fff;
+}
+
+#main-menu-mobile {
+	margin-top: 44px;
+}
+
+#gk-header-bottom .box {
+	padding: 16px 16px 0 16px;
+}
+
+.gk-product-gallery .gk-add-to-cart a {
+	text-align: center!important;
+}
+
+/* Bottom */
+#gk-bottom1,
+#gk-bottom2 {
+	padding: 14px 10px 10px 10px;
+}
+
+/* WooCommerce */
+h1.product_title {
+	font-size: 32px;
+}

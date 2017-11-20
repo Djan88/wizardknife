@@ -1,0 +1,671 @@
+/**
+ *
+ * -------------------------------------------
+ * Template stuff CSS file
+ * -------------------------------------------
+ * 
+ **/
+ 
+/*
+ *
+ * 7. Template additional features styles
+ *
+ *
+------------------------------------ */
+
+/* 7.1. Breadcrumbs & font-size
+==================================== */
+ 
+#gk-breadcrumb-area {
+	margin-bottom: 45px;
+	overflow: hidden;
+} 
+ 
+.gk-breadcrumbs {
+	float: left;
+	font-size: 11px;
+	text-transform: uppercase;
+} 
+
+.gk-breadcrumbs > a:first-child:before {
+	display: none;
+}
+
+.gk-breadcrumbs > a:before,
+.gk-breadcrumbs > span:before {
+	color: #e5e5e5;
+	content: " / ";
+	font-weight: normal;
+	padding: 0 6px!important;
+	text-align: center;
+	width: 10px;
+}
+
+.gk-breadcrumbs > a {
+	color: #777;	
+}
+
+.gk-breadcrumbs > a:active,
+.gk-breadcrumbs > a:focus,
+.gk-breadcrumbs > a:hover {
+	color: #FF7E57;
+}
+
+.gk-breadcrumbs > span {
+	color: #000;
+}
+
+#gk-font-size {
+	float: right;
+}
+
+#gk-font-size > a {
+	margin-left: 5px;
+}
+ 
+/* 7.2. Contact page template
+==================================== */
+
+#gk-contact {
+	margin: 0;
+	max-width: 540px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#gk-contact dd {
+	margin: 5px 0;
+	padding: 0;
+}
+
+#gk-contact span.error {
+	color: #ff7e57;
+}
+
+.contactpage .gk-contact-error,
+.contactpage .gk-contact-thanks {
+	background: #b3a996;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 18px;
+	margin: 30px 0;
+	max-width: 520px;
+	padding: 10px;
+	text-align: center;
+	width: 100%;
+}
+
+.contactpage .gk-contact-error {
+	background: #ff7e57;
+}
+
+.contactpage input[type="text"],
+.contactpage textarea {
+	width: 100%;
+}
+
+.contactpage input[type="submit"] {
+	float: right;
+	margin: 0;
+}
+
+/* 7.3. Page 404 template 
+==================================== */ 
+
+.page404 > p:first-child {
+	font-size: 150%;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.page404 > p:first-child > small {
+	display: block;
+	font-size: 85%;
+	text-align: center;
+}
+
+.page404 label[for="s"] {
+	display: none;
+}
+
+.page404 form {
+	margin: 10px 0 30px 0;
+	text-align: center;
+}
+
+.page404 > div {
+	clear: both;
+	overflow: hidden;
+}
+
+.page404 .widget {
+	float: left;
+	margin: 0 2%;
+	width: 46%;
+}
+
+.page404 #searchsubmit {
+	display: inline-block;
+	float: none!important;
+}
+
+/* 7.4. Archive page template
+==================================== */
+
+.archivepage .widget h2 {
+	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.archivepage .widget {
+    float: left;
+    margin: 0 2%;
+    width: 29%;
+}
+
+.archivepage .widget.first {
+    margin-left: 0;
+    width: 31%;
+}
+
+.archivepage .widget.last {
+    margin-right: 0;
+    width: 31%;
+}
+
+.archivepage .widget li:before {
+    display: none;
+}
+
+.archivepage .widget.first li {
+    position: relative;
+}
+
+.archivepage .widget.first li a {
+    display: block;
+    padding-left: 48px;
+}
+
+.archivepage .widget li small {
+    color: #aaa;
+    font-size: 11px;
+    left: 0;
+    position: absolute;
+    top: 9px;
+}
+
+/* 7.5. Tag cloud template
+==================================== */
+
+.tagcloud .tag-cloud {
+	border-top: 1px solid #e5e5e5;
+	margin: 20px 0;
+	padding: 10px 0;
+}
+
+.tagcloud .tag-cloud a {
+	font-weight: 400;
+	padding: 0 10px;
+	vertical-align: middle;
+}
+
+/* 7.6. Login page template
+==================================== */
+
+.loginpage #loginform {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 240px;
+}
+
+.loginpage input[type="text"],
+.loginpage input[type="password"] {
+	clear: both;
+	width: 240px;
+}
+
+.loginpage p label {
+	display: block;
+}
+
+.loginpage .login-remember {
+	float: left;
+}
+
+.loginpage .login-submit {
+	float: right;
+	margin: 10px 0;
+}
+
+.loginpage .login-submit input[type="submit"] {
+	margin: 0;
+}
+
+.loginpage nav.small {
+	border-top: 1px solid #eee;
+	clear: both;
+	margin: 10px auto;
+	padding: 10px 0;
+	width: 240px;
+}
+
+.loginpage nav.small ul {
+	margin: 0;
+}
+
+.loginpage nav.small ul li {
+	float: left;
+	margin-right: 10px;
+	padding-left: 0;
+}
+
+.loginpage nav.small ul li:before {
+	display: none;
+}
+
+/* 7.7. Post formats header
+==================================== */
+
+header hgroup h2 {
+	margin: 0;
+	padding: 11px 0 10px 0;
+}
+
+.gk-format-aside,
+.gk-format-audio,
+.gk-format-chat,
+.gk-format-gallery,
+.gk-format-image,
+.gk-format-link,
+.gk-format-quote,
+.gk-format-status,
+.gk-format-video {
+	background: #fff url('../images/post_formats/format-aside.png') no-repeat center center;
+	display: block;
+	height: 28px;
+	float: left;
+	margin: 0!important;
+	padding: 0;
+	text-indent: -9999px;
+	width: 28px;
+}
+
+.gk-format-audio { 
+	background: #fff url('../images/post_formats/format-audio.png') no-repeat center center;
+}
+
+.gk-format-chat { 
+	background: #fff url('../images/post_formats/format-chat.png') no-repeat center center;
+}
+
+.gk-format-gallery { 
+	background: #fff url('../images/post_formats/format-gallery.png') no-repeat center center;
+}
+
+.gk-format-image { 
+	background: #fff url('../images/post_formats/format-image.png') no-repeat center center;
+}
+
+.gk-format-link { 
+	background: #fff url('../images/post_formats/format-link.png') no-repeat center center;
+}
+
+.gk-format-quote { 
+	background: #fff url('../images/post_formats/format-quote.png') no-repeat center center;
+}
+
+.gk-format-status { 
+	background: #fff url('../images/post_formats/format-status.png') no-repeat center center;
+}
+
+.gk-format-video { 
+	background: #fff url('../images/post_formats/format-video.png') no-repeat center center;
+}
+
+/* 7.8. Page navigation
+==================================== */
+
+.pagenav {
+	margin: 20px 0 10px 0;
+	overflow: hidden;
+}
+
+.pagenav .nav-prev {
+	float: left;
+}
+
+.pagenav .nav-next {
+	float: right;
+}
+
+/* 7.9. Author info
+==================================== */
+.author-info {
+	background: #fbf9f4;
+	clear: both;
+	margin: 36px 0;
+	min-height: 48px;
+	overflow: hidden;
+	padding: 24px;
+	position: relative;
+}
+
+.author-info > aside {
+	left: 20px;
+	position: absolute;
+	top: 40px;
+}
+
+.author-info img {
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	display: block;
+	margin-top: 0;
+}
+
+.author-info > div {
+	padding: 0 0 0 110px;
+}
+
+.author-info h2 {
+	font-size: 20px;
+	font-weight: 400;
+	color: #242424;
+}
+
+.author-info .author-desc {
+	font-size: 16px;
+}
+
+/* 7.10. Post custom fields
+==================================== */
+
+.content dl.post-fields {
+	border-top: 1px solid #eee;
+	font-size: 15px;
+	line-height: 1.6;
+	margin: 10px 0;
+	padding: 0;
+}
+
+.content dl.post-fields dt {
+	border-top: 1px solid #eee;
+	font-weight: bold;
+	line-height: 1.5;
+	margin: 10px 0 0 0;
+	padding: 8px 0 2px 0;
+}
+
+.content dl.post-fields dt:first-child {
+	border-top: none;
+} 
+
+.content dl.post-fields dd {
+	margin: 0;
+	padding: 5px 0;
+}
+
+/* 7.11. oEmbed support
+==================================== */
+
+/* YouTube, Vimeo - responsive support */
+.content iframe[src^='http://www.youtube.com'],
+.content iframe[src^='https://www.youtube.com'],
+.content iframe[src^='http://youtube.com'],
+.content iframe[src^='https://youtube.com'],
+.content iframe[src*='vimeo.com'] {
+	max-width: 100%!important;
+}
+
+/* Twitter - responsive support */
+.content .twitter-tweet-rendered {
+	max-width: 100%!important;
+}
+
+/* Flickr - responsive support */
+.content a[href^='http://www.flickr.com'],
+.content a[href^='https://www.flickr.com'],
+.content a[href^='http://flickr.com'],
+.content a[href^='https://flickr.com'] {
+	max-width: 100%!important;
+}
+
+
+/* 7.12. Attachment page
+==================================== */
+
+.attachment-page p {
+	clear: both;
+	padding: 30px 0 0 0;
+}
+
+.attachment-page .nav-prev {
+	float: left;
+}
+
+.attachment-page .nav-next {
+	float: right;
+}
+
+.attachment-page .intro {
+	overflow: hidden;
+	padding: 0 0 30px 0;
+}
+
+/* 7.13. Search page
+==================================== */
+
+.search-page #searchform {
+	padding: 40px 0;
+	text-align: center;
+}
+
+.search-page #searchform input[type="submit"] {
+	display: inline-block;
+	float: none;
+}
+
+.search-page .page-title {
+	font-size: 32px;
+	text-align: center;
+}
+
+/* 7.14. Log in popup
+==================================== */
+
+#gk-popup-overlay,
+.gk-popup {
+	color: #999;
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1000002;
+	left: 50%;
+	top: 50%;
+	background: #000;
+}
+
+.gk-popup {
+	position: absolute;
+}
+
+.gk-popup {
+	margin-left: -240px;
+	top: 70px;
+	width: 480px;
+}
+
+.gk-popup-wrap {
+	padding: 40px;
+	overflow: hidden;
+}
+
+#gk-popup-overlay,
+.gk-popup {
+	display: none;
+	overflow: hidden;
+	position: fixed;
+	z-index: 1000002;
+	left: 50%;
+}
+
+.gk-popup h3 {
+	color: #fff;
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 42px;
+	margin: 0 0 20px;
+	text-transform: uppercase
+}
+
+.gk-popup a {
+	color: #ccc;
+}
+
+.gk-popup a:active,
+.gk-popup a:focus,
+.gk-popup a:hover { 
+	color: #ff7e57;
+}
+
+.gk-popup #loginform  { 
+   	overflow: hidden;
+}
+
+.gk-popup #loginform input[type="text"],
+.gk-popup #loginform input[type="password"] {
+	background: #111;
+	border-color: #353535;
+	float: right;
+	width: 75%;
+}
+
+.gk-popup .login-remember, 
+.gk-popup .login-submit { 
+    margin-left: 100px
+}
+
+.gk-popup .button-primary { 
+    background: #ff7e57;
+}
+
+.gk-popup .button-primary:hover { 
+    background: #444;
+}
+
+.gk-popup .login-remember label {
+	font-size: 13px;
+	font-weight: 300!important;
+}
+
+.gk-popup-wrap {
+	padding: 32px;
+	overflow: hidden;
+}
+
+.gk-popup-wrap label {
+	color: #999;
+}
+
+#gk-popup-overlay {
+	background: #000;
+	width: 100%;
+	height: 100%;
+	z-index: 1000001;
+	top: 0;
+	left: 0;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
+	filter: alpha(opacity=45);
+	opacity: 0.45;
+	margin-left: 0;
+}
+
+/* Cart styling */
+#gk-popup-cart .cart_list li > a {
+	float: left;
+	line-height: 1.2;
+	width: 70%;
+}
+
+#gk-popup-cart p.total {
+	border-top: 1px solid #333;
+	margin: 32px 0 0;
+	padding: 12px 0 0;
+	text-align: right;
+}
+
+#gk-popup-cart p.total .amount { 
+	color: #FF7E57;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+#gk-popup-cart p.buttons {
+	text-align: right;
+}
+
+#gk-popup-cart p.buttons a {
+	color: #ff7e57;
+	font-weight: 400;
+	margin: 0 0 0 5px;
+}
+
+#gk-popup-cart  li a img {
+	display: none;
+}
+
+#gk-popup-cart .variation {
+	font-size: 12px;
+	margin: 0;
+}
+
+#gk-popup-cart li {
+	border-top: 1px solid #333;
+	position: relative;
+}
+
+#gk-popup-cart li:first-child {
+	border-top: none;
+}
+
+#gk-popup-cart li .quantity {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+#gk-popup-cart p.buttons a:active,
+#gk-popup-cart p.buttons a:focus,
+#gk-popup-cart p.buttons a:hover {
+	color: #fff!important;
+}
+
+/* 7.15. Tables
+==================================== */
+
+article section table {
+	margin: 10px 0;
+}
+
+article section table th {
+	background: #eee;
+	padding: 0 4px;
+	text-align: left;
+}
+
+article section table td {
+	padding: 0 4px;
+}
+
+article section table:not(.woocommerce) tbody tr:nth-child(2n), {
+	background: #f5f5f5;
+}
+
+article section table td span.gk-table-label {
+	display: none;
+}
