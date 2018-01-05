@@ -35,14 +35,14 @@
 # jujjer <jujjer@gmail.com>, 2013
 # Иван <wen89@inbox.ru>, 2013-2014
 # Иван <wen89@inbox.ru>, 2013
-# крыжановская Наталья Сергеевна <nat_rev81@mail.ru>, 2014
+# крыжановская Наталья Сергеевна <inactive+Натали@transifex.com>, 2014
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCommerce\n"
 "Report-Msgid-Bugs-To: https://github.com/woothemes/woocommerce/issues\n"
 "POT-Creation-Date: 2015-08-24 16:25:51+00:00\n"
-"PO-Revision-Date: 2015-08-24 16:32+0000\n"
-"Last-Translator: Claudio Sanches <contato@claudiosmweb.com>\n"
+"PO-Revision-Date: 2015-08-24 18:54+0000\n"
+"Last-Translator: Almaz Mannanov <AlmazWorks@gmail.com>\n"
 "Language-Team: Russian (Russia) (http://www.transifex.com/woothemes/woocommerce/language/ru_RU/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -2369,7 +2369,7 @@ msgid ""
 "WooCommerce can accept both online and offline payments. %2$sAdditional "
 "payment methods%3$s can be installed later and managed from the %1$scheckout"
 " settings%3$s screen."
-msgstr ""
+msgstr "WooCommerce позволяет принимать как онлайн так и оффлайн платежи. %2$sДополнительные методы платежей%3$s могут быть задействованы позже и настраиваются в разделе %1$sНастройки оформления заказов%3$s."
 
 #: includes/admin/class-wc-admin-setup-wizard.php:655
 msgid ""
@@ -3640,7 +3640,7 @@ msgstr "Только доставка"
 msgid ""
 "Define whether or not the entire product is taxable, or just the cost of "
 "shipping it."
-msgstr ""
+msgstr "Определите весь ли товар облагается налогом, или только стоимость его доставки."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:269
 #: includes/admin/meta-boxes/views/html-order-items.php:21
@@ -3662,7 +3662,7 @@ msgstr "Класс налога"
 msgid ""
 "Choose a tax class for this product. Tax classes are used to apply different"
 " tax rates specific to certain types of product."
-msgstr ""
+msgstr "Выберите класс налога для этого товара. Классы налога используются для применения разных налоговых ставок для различных типов товара."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-product-data.php:304
 #: includes/admin/meta-boxes/views/html-variation-admin.php:84
@@ -6175,7 +6175,7 @@ msgstr "Адрес оплаты клиента"
 
 #: includes/admin/settings/views/settings-tax.php:46
 msgid "Shipping Tax Class:"
-msgstr "Класс налогов для доставки:"
+msgstr "Класс налога на доставку:"
 
 #: includes/admin/settings/views/settings-tax.php:47
 msgid ""
