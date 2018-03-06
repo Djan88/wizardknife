@@ -6,7 +6,7 @@
  * Plugin Name: jQuery Colorbox
  * Plugin URI: http://www.techotronic.de/plugins/jquery-colorbox/
  * Description: Used to overlay images on the current page. Images in one post are grouped automatically.
- * Version: 4.6
+ * Version: 4.6.2
  * Author: Arne Franken
  * Author URI: http://www.techotronic.de/
  * License: GPL
@@ -19,8 +19,8 @@
 ?>
 <?php
 //define constants
-define('JQUERYCOLORBOX_VERSION', '4.6');
-define('COLORBOXLIBRARY_VERSION', '1.3.21');
+define('JQUERYCOLORBOX_VERSION', '4.6.2');
+define('COLORBOXLIBRARY_VERSION', '1.4.33');
 
 if (!defined('JQUERYCOLORBOX_PLUGIN_BASENAME')) {
   //jquery-colorbox/jquery-colorbox.php
@@ -48,7 +48,7 @@ if (!defined('JQUERYCOLORBOX_SETTINGSNAME')) {
   define('JQUERYCOLORBOX_SETTINGSNAME', 'jquery-colorbox_settings');
 }
 if (!defined('JQUERYLIBRARY_VERSION')) {
-  define('JQUERYLIBRARY_VERSION', '1.9.0');
+  define('JQUERYLIBRARY_VERSION', '1.10.1');
 }
 if (!defined('JQUERYCOLORBOX_USERAGENT')) {
   define('JQUERYCOLORBOX_USERAGENT', 'jQuery Colorbox V' . JQUERYCOLORBOX_VERSION . '; (' . get_bloginfo('url') . ')');
@@ -72,7 +72,7 @@ class JQueryColorbox {
    * @author Arne Franken
    */
   //public static function JQueryColorbox() {
-  function JQueryColorbox() {
+  function __construct() {
     if (!function_exists('plugins_url')) {
       return;
     }
@@ -133,7 +133,8 @@ class JQueryColorbox {
     if (is_admin()) {
       require_once 'includes/jquery-colorbox-backend.php';
       new JQueryColorboxBackend($this->colorboxSettings, $this->colorboxThemes, $this->colorboxUnits, $this->colorboxTransitions, $this->jQueryColorboxDefaultSettings());
-    } else {
+    }
+    else {
       require_once 'includes/jquery-colorbox-frontend.php';
       new JQueryColorboxFrontend($this->colorboxSettings);
     }

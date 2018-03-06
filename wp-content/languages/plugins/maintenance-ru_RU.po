@@ -1,0 +1,250 @@
+# Translation of Plugins - Maintenance - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Maintenance - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-05-08 21:56:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Maintenance - Stable (latest release)\n"
+
+#: includes/admin.php:88
+msgid "Save changes"
+msgstr "Сохранить"
+
+#: includes/functions.php:161
+msgid "Standard Fonts"
+msgstr "Стандартные шрифты"
+
+#: includes/functions.php:208
+msgid "Support"
+msgstr "Поддержка"
+
+#: includes/functions.php:229
+msgid "Page title"
+msgstr "Заголовок страницы"
+
+#: includes/functions.php:230
+msgid "Headline"
+msgstr "Заголовок"
+
+#: includes/functions.php:231
+msgid "Description"
+msgstr "Описание"
+
+#: includes/functions.php:233
+msgid "Logo"
+msgstr "Логотип"
+
+#: includes/functions.php:233
+msgid "Upload Logo"
+msgstr "Загрузить логотип"
+
+#: includes/functions.php:245
+msgid "UA-XXXXX-X"
+msgstr "UA-XXXXX-X"
+
+#: includes/functions.php:246
+msgid "Blur intensity"
+msgstr "Интенсивность размытия"
+
+#: includes/functions.php:252
+msgid "Background blur"
+msgstr "Размытие фона"
+
+#: includes/functions.php:252
+msgid "Apply a blur"
+msgstr "Применить размытие"
+
+#: includes/functions.php:340
+msgid "Background image"
+msgstr "Фоновое изображение"
+
+#: includes/functions.php:340
+msgid "Upload Background"
+msgstr "Загрузить фон"
+
+#: includes/functions.php:346
+msgid "Background color"
+msgstr "Цвет фона"
+
+#: includes/functions.php:347
+msgid "Font color"
+msgstr "Цвет шрифта"
+
+#: includes/functions.php:354
+msgid "Font family"
+msgstr "Семейство шрифтов"
+
+#: includes/functions.php:604
+msgid "Website is under construction"
+msgstr "Сайт находится в стадии разработки"
+
+#: load/functions.php:37
+msgid "Permission access denied!"
+msgstr "Доступ запрещен!"
+
+#: load/functions.php:257
+msgid "User Login"
+msgstr "Вход для пользователя"
+
+#: load/functions.php:258
+msgid "Username"
+msgstr "Логин"
+
+#: load/functions.php:259
+msgid "Password"
+msgstr "Пароль"
+
+#: load/functions.php:261
+msgid "Login"
+msgstr "Логин"
+
+#: includes/functions.php:238
+msgid "503"
+msgstr "503"
+
+#: includes/functions.php:238
+msgid "Service temporarily unavailable"
+msgstr "Сервис временно недоступен"
+
+#: includes/functions.php:362
+msgid "Have any questions?"
+msgstr "Есть вопросы?"
+
+#: includes/functions.php:409
+msgid "Demo website"
+msgstr "Демо-сайт"
+
+#: includes/functions.php:605
+msgid "Maintenance mode is on"
+msgstr "Режим обслуживания активен"
+
+#: includes/functions.php:187
+msgid "General Settings"
+msgstr "Основные настройки"
+
+#: includes/functions.php:195
+msgid "Pro version"
+msgstr "Pro-версия"
+
+#: includes/functions.php:606
+msgid "Website will be available soon"
+msgstr "Сайт скоро будет доступен"
+
+#. Author URI of the plugin/theme
+msgid "http://fruitfulcode.com"
+msgstr "http://fruitfulcode.com"
+
+#. Author of the plugin/theme
+msgid "fruitfulcode"
+msgstr "fruitfulcode"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/maintenance/"
+msgstr "http://wordpress.org/plugins/maintenance/"
+
+#. #-#-#-#-#  tmp-maintenance.pot (Maintenance 2.5)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: includes/admin.php:73 includes/functions.php:539
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: includes/functions.php:189
+msgid "Exclude pages"
+msgstr "Исключить страницы"
+
+#: includes/functions.php:202
+msgid "Fruitful Code projects"
+msgstr "Проекты Fruitful Code"
+
+#: includes/functions.php:232
+msgid "Footer Text"
+msgstr "Текст подвала"
+
+#: includes/functions.php:279
+msgid "Select the page to be displayed:"
+msgstr "Выберите страницу для отображения:"
+
+#: includes/functions.php:188
+msgid "Custom CSS"
+msgstr "Собственный CSS"
+
+#: includes/functions.php:374
+msgid "Premium WordPress themes"
+msgstr "Premium темы WordPress"
+
+#: includes/functions.php:380
+msgid "ANAGLYPH - One page / Multi Page WordPress Theme"
+msgstr "ANAGLYPH - Одностраничная / Многостраничная тема WordPress"
+
+#: includes/functions.php:245
+msgid "Google Analytics ID"
+msgstr "Google Analytics ID"
+
+#: includes/functions.php:385
+msgid "Love.ly - Simple & Elegant WordPress theme"
+msgstr "Love.ly - Простая и элегантная тема"
+
+#: includes/functions.php:237
+msgid "Admin bar"
+msgstr "Панель администратора"
+
+#: includes/functions.php:391
+msgid "Zoner - Real Estate WordPress theme"
+msgstr "Zoner - тема для сайтов о недвижимости"
+
+#: includes/functions.php:237
+msgid "Show admin bar"
+msgstr "Показать панель администратора"
+
+#: includes/functions.php:253
+msgid "Login On / Off"
+msgstr "Вход Вкл / Выкл"
+
+#. Description of the plugin/theme
+msgid "Take your website for maintenance away from public view. Use maintenance plugin if your website is in development or you need to change a few things, run an upgrade. Make it only accessible by login and password. Plugin has a options to add a logo, background, headline, message, colors, login, etc. Extended PRO with more features version is available for purchase."
+msgstr "Уберите ваш сайт из публичного просмотра для обслуживания. Используйте плагин если сайт в разработке, надо сменить пару вещей, запустить обновление. Сделайте его доступным только по логину и паролю. ПЛагин может добавить логотип, фон, заголовок, сообщение, цвета, логин итд. ПРО версия доступная для покупки имеет еще больше возможностей."
+
+#: includes/functions.php:265
+msgid "CSS Code"
+msgstr "Каскадные таблицы стилей (CSS Code)"
+
+#: includes/functions.php:168
+msgid "Google Web Fonts"
+msgstr "Веб шрифты Google"
+
+#: includes/functions.php:325
+msgid "Not available object."
+msgstr "Недоступный объект."
+
+#: load/functions.php:260
+msgid "Lost Password"
+msgstr "Забыли пароль?"
+
+#: includes/functions.php:404
+msgid "Extended functionality"
+msgstr "Расширенная функциональность"
+
+#: load/functions.php:45
+msgid "You entered your login are incorrect!"
+msgstr "Вы ввели некорректный логин! "
+
+#: load/functions.php:49
+msgid "You entered your password are incorrect!"
+msgstr "Вы ввели некорректный пароль!"
+
+#: load/functions.php:52
+msgid "You entered your login and password are incorrect!"
+msgstr "Вы ввели некорректный логин и пароль!"
+
+#: includes/functions.php:405
+msgid "Purchase <a href=\"http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode\" target=\"_blank\">PRO</a> version  with extended functionality. %1$s If you like our plugin please <a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5\">rate it</a>, <a title=\"leave feedbacks\" href=\"%2$s\" target=\"_blank\">leave feedbacks</a>."
+msgstr "Купите <a href=\"http://codecanyon.net/item/maintenance-wordpress-plugin/2781350?ref=fruitfulcode\" target=\"_blank\">PRO</a> версию с расширенной функциональностью. %1$s если вам нравится наш плагин, пожалуйста, <a target=\"_blank\" href=\"http://wordpress.org/support/view/plugin-reviews/maintenance?filter=5\">оцените его</a>, <a title=\"оставить отзыв\" href=\"%2$s\" target=\"_blank\">оставьте отзыв</a>"
+
+#: includes/functions.php:363
+msgid "You may find answers to your questions at <a target=\"_blank\" href=\"http://wordpress.org/support/plugin/maintenance\">support forum</a><br>You may  <a target=\"_blank\" href=\"mailto:mail@fruitfulcode.com?subject=Maintenance plugin\">contact us</a> with customization requests and suggestions.<br> Please visit our website to learn about us and our services <a href=\"%1$s\" title=\"%2$s\">%2$s</a>"
+msgstr "Вы можете найти ответы на вопросы <a target=\"_blank\" href=\"http://wordpress.org/support/plugin/maintenance\">на форуме поддержки</a><br>Вы можете  <a target=\"_blank\" href=\"mailto:mail@fruitfulcode.com?subject=Maintenance plugin\">написать нам</a> запросы и предложения.<br> Посетите наш сайт, чтобы узнать о нас и наших сервисах <a href=\"%1$s\" title=\"%2$s\">%2$s</a>"

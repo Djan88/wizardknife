@@ -17,6 +17,9 @@ class WPSEO_Import {
 	 */
 	public $msg = '';
 
+	/** @var bool $success If import was a success flag. */
+	public $success = false;
+
 	/**
 	 * @var array
 	 */
@@ -116,15 +119,18 @@ class WPSEO_Import {
 	 */
 	private function unzip_file() {
 		$unzipped = unzip_file( $this->file['file'], $this->path );
+		$msg_base = __( 'Settings could not be imported:', 'wordpress-seo' ) . ' ';
+
 		if ( is_wp_error( $unzipped ) ) {
-			$this->msg = __( 'Settings could not be imported:', 'wordpress-seo' ) . ' ' . sprintf( __( 'Unzipping failed with error "%s".', 'wordpress-seo' ), $unzipped->get_error_message() );
+			/* translators: %s expands to an error message. */
+			$this->msg = $msg_base . sprintf( __( 'Unzipping failed with error "%s".', 'wordpress-seo' ), $unzipped->get_error_message() );
 
 			return false;
 		}
 
 		$this->filename = $this->path . 'settings.ini';
 		if ( ! is_file( $this->filename ) || ! is_readable( $this->filename ) ) {
-			$this->msg = __( 'Settings could not be imported:', 'wordpress-seo' ) . ' ' . __( 'Unzipping failed - file settings.ini not found.', 'wordpress-seo' );
+			$this->msg = $msg_base . __( 'Unzipping failed - file settings.ini not found.', 'wordpress-seo' );
 
 			return false;
 		}
@@ -136,7 +142,12 @@ class WPSEO_Import {
 	 * Parse the option file
 	 */
 	private function parse_options() {
-		$options = parse_ini_file( $this->filename, true );
+		/*
+		 * Implemented INI_SCANNER_RAW to make sure variables aren't parsed.
+		 *
+		 * http://php.net/manual/en/function.parse-ini-file.php#99943
+		 */
+		$options = parse_ini_file( $this->filename, true, INI_SCANNER_RAW );
 
 		if ( is_array( $options ) && $options !== array() ) {
 			if ( isset( $options['wpseo']['version'] ) && $options['wpseo']['version'] !== '' ) {
@@ -145,7 +156,8 @@ class WPSEO_Import {
 			foreach ( $options as $name => $opt_group ) {
 				$this->parse_option_group( $name, $opt_group, $options );
 			}
-			$this->msg = __( 'Settings successfully imported.', 'wordpress-seo' );
+			$this->msg     = __( 'Settings successfully imported.', 'wordpress-seo' );
+			$this->success = true;
 		}
 		else {
 			$this->msg = __( 'Settings could not be imported:', 'wordpress-seo' ) . ' ' . __( 'No settings found in file.', 'wordpress-seo' );
@@ -155,9 +167,9 @@ class WPSEO_Import {
 	/**
 	 * Parse the option group and import it
 	 *
-	 * @param string $name
-	 * @param array  $opt_group
-	 * @param array  $options
+	 * @param string $name      Name string.
+	 * @param array  $opt_group Option group data.
+	 * @param array  $options   Options data.
 	 */
 	private function parse_option_group( $name, $opt_group, $options ) {
 		if ( $name === 'wpseo_taxonomy_meta' ) {
@@ -170,6 +182,7 @@ class WPSEO_Import {
 			$option_instance->import( $opt_group, $this->old_wpseo_version, $options );
 		}
 		elseif ( WP_DEBUG === true || ( defined( 'WPSEO_DEBUG' ) && WPSEO_DEBUG === true ) ) {
+			/* translators: %s expands to the name of an outdated setting. */
 			$this->msg = sprintf( __( 'Setting "%s" is no longer used and has been discarded.', 'wordpress-seo' ), $name );
 		}
 	}
@@ -181,12 +194,12 @@ class WPSEO_Import {
 		if ( file_exists( $this->filename ) && is_writable( $this->filename ) ) {
 			unlink( $this->filename );
 		}
-		if ( file_exists( $this->file['file'] ) && is_writable( $this->file['file'] ) ) {
+		if ( ! empty( $this->file['file'] ) && file_exists( $this->file['file'] ) && is_writable( $this->file['file'] ) ) {
 			unlink( $this->file['file'] );
 		}
 		if ( file_exists( $this->path ) && is_writable( $this->path ) ) {
-			rmdir( $this->path );
+			$wp_file = new WP_Filesystem_Direct( $this->path );
+			$wp_file->rmdir( $this->path, true );
 		}
 	}
-
 }

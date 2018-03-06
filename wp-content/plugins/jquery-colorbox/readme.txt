@@ -1,10 +1,9 @@
 === Plugin Name ===
 Contributors: techotronic  
-Donate link: http://www.techotronic.de/donate/  
 Tags: jquery, colorbox, lightbox, images, pictures, photos, gallery, javascript, overlay, nextgen gallery, nextgen-gallery, image, picture, photo, media, slideshow, ngg, mu  
 Requires at least: 2.8  
-Tested up to: 3.4
-Stable tag: 4.6
+Tested up to: 4.6.1
+Stable tag: 4.6.2
 
 Adds Colorbox/Lightbox functionality to images, grouped by post or page. Works for WordPress and NextGEN galleries. Comes with different themes.
 
@@ -62,7 +61,7 @@ Translating the plugin is easy if you understand english and are fluent in anoth
 I described in the [FAQ](http://wordpress.org/extend/plugins/jquery-colorbox/faq/) how the translation works.
 
 **Credits**  
-Includes [ColorBox](http://jacklmoore.com/colorbox/) 1.3.20.1 jQuery plugin from Jack Moore.
+Includes [ColorBox](http://jacklmoore.com/colorbox/) 1.4.33 jQuery plugin from Jack Moore.
 The picture I used for the screenshots was designed by [Davide Vicariotto](http://wallpapers.vintage.it/)
 
 == Installation ==
@@ -140,7 +139,16 @@ Do not forget to activate auto Colorbox if you want the Lightbox/Colorbox to wor
   I'll include new FAQs in newer versions.
 
 == Changelog ==
-### 4.6 (2012-01-21) ###
+### 4.6.2 (2016-11-14) ###
+* BUGFIX: use __construct() to support newer PHP versions
+* CHANGE: Add some graphix
+
+### 4.6.1 (2015-12-06) ###
+* CHANGE: If title attribute of image is empty, the alt attribute is used to display the colorbox title.
+* CHANGE: update Colorbox version to 1.4.33
+* CHANGE: update jQuery version to 1.10.1 (if selected on settings page)
+
+### 4.6 (2013-01-21) ###
 * NEW: Czech translation by David Weis
 * CHANGE: Update of the Slovak translation by B. Radenovich
 * CHANGE: update Colorbox version to 1.3.21

@@ -9,7 +9,7 @@
  * Left column for settings page
  */
 ?>
-<div class="postbox-container" style="width: 69%;">
+<div class="postbox-container">
   <form name="jquery-colorbox-settings-update" method="post" action="admin-post.php">
     <?php if (function_exists('wp_nonce_field') === true) wp_nonce_field('jquery-colorbox-settings-form'); ?>
     <div id="poststuff">

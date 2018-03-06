@@ -39,12 +39,13 @@ class WPSEO_GSC_Mapper {
 	/**
 	 * If there is no platform, just get the first key out of the array and redirect to it.
 	 *
-	 * @param string $platform
+	 * @param string $platform Platform (desktop, mobile, feature phone).
 	 *
 	 * @return mixed
 	 */
 	public static function get_current_platform( $platform ) {
-		if ( $current_platform = filter_input( INPUT_GET, $platform ) ) {
+		$current_platform = filter_input( INPUT_GET, $platform );
+		if ( ! empty( $current_platform ) ) {
 			return $current_platform;
 		}
 
@@ -55,7 +56,7 @@ class WPSEO_GSC_Mapper {
 	/**
 	 * Mapping the platform
 	 *
-	 * @param string $platform
+	 * @param string $platform Platform (desktop, mobile, feature phone).
 	 *
 	 * @return mixed
 	 */
@@ -68,13 +69,16 @@ class WPSEO_GSC_Mapper {
 	/**
 	 * Mapping the given platform by value and return its key
 	 *
-	 * @param string $platform
+	 * @param string $platform Platform (desktop, mobile, feature phone).
 	 *
 	 * @return string
 	 */
 	public static function platform_from_api( $platform ) {
-		if ( ! empty( $platform ) && $platform = array_search( $platform, self::$platforms ) ) {
-			return $platform;
+		if ( ! empty( $platform ) ) {
+			$platform = array_search( $platform, self::$platforms, true );
+			if ( $platform !== false ) {
+				return $platform;
+			}
 		}
 
 		return $platform;
@@ -83,11 +87,11 @@ class WPSEO_GSC_Mapper {
 	/**
 	 * Mapping the given category by searching for its key.
 	 *
-	 * @param string $category
+	 * @param string $category Issue type.
 	 *
 	 * @return mixed
 	 */
-	public static function category_to_api( $category) {
+	public static function category_to_api( $category ) {
 		if ( ! empty( $category ) && array_key_exists( $category, self::$categories ) ) {
 			return self::$categories[ $category ];
 		}
@@ -98,16 +102,18 @@ class WPSEO_GSC_Mapper {
 	/**
 	 * Mapping the given category by value and return its key
 	 *
-	 * @param string $category
+	 * @param string $category Issue type.
 	 *
 	 * @return string
 	 */
 	public static function category_from_api( $category ) {
-		if ( ! empty( $category ) && $category = array_search( $category, self::$categories ) ) {
-			return $category;
+		if ( ! empty( $category ) ) {
+			$category = array_search( $category, self::$categories, true );
+			if ( $category !== false ) {
+				return $category;
+			}
 		}
 
 		return $category;
 	}
-
 }

@@ -115,7 +115,7 @@ class acf_revisions
 		$post_id = 0;
 		
 		
-		// determin $post_id
+		// determine $post_id
 		if( isset($_POST['post_id']) )
 		{
 			$post_id = $_POST['post_id'];
@@ -151,17 +151,6 @@ class acf_revisions
 
 				// load value
 				add_filter('_wp_post_revision_field_' . $field['name'], array($this, 'wp_post_revision_field'), 10, 4);
-				
-				
-				// WP 3.5: left vs right
-				// Add a value of the revision ID (as there is no way to determin this within the '_wp_post_revision_field_' filter!)
-				if( isset($_GET['action'], $_GET['left'], $_GET['right']) && $_GET['action'] == 'diff' )
-				{
-					global $left_revision, $right_revision;
-					
-					$left_revision->$field['name'] = 'revision_id=' . $_GET['left'];
-					$right_revision->$field['name'] = 'revision_id=' . $_GET['right'];
-				}
 								
 			}
 		}
@@ -193,7 +182,7 @@ class acf_revisions
 		$post_id = 0;
 		
 		
-		// determin $post_id
+		// determine $post_id
 		if( isset($post->ID) )
 		{
 			// WP 3.6

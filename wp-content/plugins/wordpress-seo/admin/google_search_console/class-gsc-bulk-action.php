@@ -21,7 +21,8 @@ class WPSEO_GSC_Bulk_Action {
 	 * Handles the bulk action when there is an action posted
 	 */
 	private function handle_bulk_action() {
-		if ( $bulk_action = $this->determine_bulk_action() ) {
+		$bulk_action = $this->determine_bulk_action();
+		if ( $bulk_action !== false ) {
 			$this->run_bulk_action( $bulk_action, $this->posted_issues() );
 
 			wp_redirect( filter_input( INPUT_POST, '_wp_http_referer' ) );
@@ -35,14 +36,16 @@ class WPSEO_GSC_Bulk_Action {
 	 * @return string|bool
 	 */
 	private function determine_bulk_action() {
-		// If posted action is the selected one above the table, return that value.
-		if ( $action = filter_input( INPUT_POST, 'action' ) ) {
-			return $action;
-		}
+		$action_inputs = array(
+			'action', // Bulk action select above the table.
+			'action2', // Bulk action select below the table.
+		);
 
-		// If posted action is the selected one below the table, return that value.
-		if ( $action = filter_input( INPUT_POST, 'action2' ) ) {
-			return $action;
+		foreach ( $action_inputs as $action_name ) {
+			$action = filter_input( INPUT_POST, $action_name );
+			if ( ! empty( $action ) && $action !== '-1' ) {
+				return $action;
+			}
 		}
 
 		return false;
@@ -54,7 +57,8 @@ class WPSEO_GSC_Bulk_Action {
 	 * @return array
 	 */
 	private function posted_issues() {
-		if ( $issues = filter_input( INPUT_POST, 'wpseo_crawl_issues', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY ) ) {
+		$issues = filter_input( INPUT_POST, 'wpseo_crawl_issues', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY );
+		if ( ! empty( $issues ) ) {
 			return $issues;
 		}
 
@@ -65,12 +69,12 @@ class WPSEO_GSC_Bulk_Action {
 	/**
 	 * Runs the bulk action
 	 *
-	 * @param string $bulk_action
-	 * @param array  $issues
+	 * @param string $bulk_action Action type.
+	 * @param array  $issues      Set of issues to apply to.
 	 */
 	private function run_bulk_action( $bulk_action, $issues ) {
 		switch ( $bulk_action ) {
-			case 'mark_as_fixed' :
+			case 'mark_as_fixed':
 				array_map( array( $this, 'action_mark_as_fixed' ), $issues );
 
 				break;
@@ -80,7 +84,7 @@ class WPSEO_GSC_Bulk_Action {
 	/**
 	 * Marks the issue as fixed
 	 *
-	 * @param string $issue
+	 * @param string $issue Issue URL.
 	 *
 	 * @return string
 	 */
@@ -89,5 +93,4 @@ class WPSEO_GSC_Bulk_Action {
 
 		return $issue;
 	}
-
 }

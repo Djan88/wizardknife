@@ -1,18 +1,23 @@
-# Translation of Twenty Eleven in Russian
-# This file is distributed under the same license as the Twenty Eleven package.
+# Translation of Themes - Twenty Eleven in Russian
+# This file is distributed under the same license as the Themes - Twenty Eleven package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2015-07-27 22:28:47+0000\n"
+"PO-Revision-Date: 2015-08-31 20:58:49+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: GlotPress/1.0-alpha-1100\n"
-"Project-Id-Version: Twenty Eleven\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Themes - Twenty Eleven\n"
 
-#. Author URI of the plugin/theme
-msgid "https://wordpress.org/"
-msgstr "https://wordpress.org/"
+#. Description of the plugin/theme
+msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
+msgstr "Тема 2011 для WordPress &#8212; утончённая, лёгкая и гибкая. Сделайте её своей, создав произвольное меню, изображение заголовка и фон. Затем выберите в настройках светлую или тёмную цветовую схему, произвольный цвет ссылок и один из трёх вариантов разметки. Twenty Eleven включает в себя шаблон страницы &laquo;Избранное&raquo;, который позволяет показать на главной странице ваши лучшие материалы, достаточно областей для виджетов (помимо боковой колонки, есть три области в подвале и ещё одна на странице избранного), а также специальный виджет &laquo;Мимолётное&raquo; для отображения ваших заметок, ссылок, цитат и статусов. Тема содержит таблицы стилей для печати и для визуального редактора, поддержку миниатюр для записей (как изображений в заголовке для обычных записей и страниц и как больших изображений для прилепленных записей), а также особые стили для шести различных форматов записей."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Eleven"
+msgstr "Twenty Eleven"
 
 #. Template Name of the plugin/theme
 msgid "Sidebar Template"
@@ -21,22 +26,6 @@ msgstr "Шаблон с боковой колонкой"
 #. Template Name of the plugin/theme
 msgid "Showcase Template"
 msgstr "Шаблон избранного"
-
-#. Author of the plugin/theme
-msgid "the WordPress team"
-msgstr "Команда WordPress"
-
-#. Description of the plugin/theme
-msgid "The 2011 theme for WordPress is sophisticated, lightweight, and adaptable. Make it yours with a custom menu, header image, and background -- then go further with available theme options for light or dark color scheme, custom link colors, and three layout choices. Twenty Eleven comes equipped with a Showcase page template that transforms your front page into a showcase to show off your best content, widget support galore (sidebar, three footer areas, and a Showcase page widget area), and a custom \"Ephemera\" widget to display your Aside, Link, Quote, or Status posts. Included are styles for print and for the admin editor, support for featured images (as custom header images on posts and pages and as large images on featured \"sticky\" posts), and special styles for six different post formats."
-msgstr "Тема 2011 для WordPress &#8212; утончённая, лёгкая и гибкая. Сделайте её своей, создав произвольное меню, изображение заголовка и фон. Затем выберите в настройках светлую или тёмную цветовую схему, произвольный цвет ссылок и один из трёх вариантов разметки. Twenty Eleven включает в себя шаблон страницы &laquo;Избранное&raquo;, который позволяет показать на главной странице ваши лучшие материалы, достаточно областей для виджетов (помимо боковой колонки, есть три области в подвале и ещё одна на странице избранного), а также специальный виджет &laquo;Мимолётное&raquo; для отображения ваших заметок, ссылок, цитат и статусов. Тема содержит таблицы стилей для печати и для визуального редактора, поддержку миниатюр для записей (как изображений в заголовке для обычных записей и страниц и как больших изображений для прилепленных записей), а также особые стили для шести различных форматов записей."
-
-#. Theme URI of the plugin/theme
-msgid "https://wordpress.org/themes/twentyeleven/"
-msgstr "https://wordpress.org/themes/twentyeleven/"
-
-#. Theme Name of the plugin/theme
-msgid "Twenty Eleven"
-msgstr "Twenty Eleven"
 
 #: tag.php:19
 msgid "Tag Archives: %s"
@@ -52,7 +41,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущая"
 
 #: sidebar.php:26
 msgid "Meta"
-msgstr "Прочее"
+msgstr "Мета"
 
 #: sidebar.php:19
 msgid "Archives"
@@ -82,39 +71,39 @@ msgstr "Извините, по вашему запросу ничего не н�
 msgid "Search Results for: %s"
 msgstr "Результаты поиска: %s"
 
-#: inc/widgets.php:170
+#: inc/widgets.php:185
 msgid "Number of posts to show:"
 msgstr "Количество записей:"
 
-#: inc/widgets.php:167
+#: inc/widgets.php:182
 msgid "Title:"
 msgstr "Заголовок:"
 
-#: inc/widgets.php:95 inc/widgets.php:104
+#: inc/widgets.php:107 inc/widgets.php:116
 msgid "% <span class=\"reply\">comments &rarr;</span>"
 msgstr "<span class=\"reply\">Комментарии (%) &rarr;</span>"
 
-#: inc/widgets.php:95 inc/widgets.php:104
+#: inc/widgets.php:107 inc/widgets.php:116
 msgid "1 <span class=\"reply\">comment &rarr;</span>"
 msgstr "<span class=\"reply\">1 комментарий &rarr;</span>"
 
-#: inc/widgets.php:95 inc/widgets.php:104
+#: inc/widgets.php:107 inc/widgets.php:116
 msgid "0 <span class=\"reply\">comments &rarr;</span>"
 msgstr "<span class=\"reply\">0 комментариев &rarr;</span>"
 
-#: inc/widgets.php:56
+#: inc/widgets.php:68
 msgid "Ephemera"
 msgstr "Мимолётное"
 
-#: inc/widgets.php:22
+#: inc/widgets.php:21
 msgid "Twenty Eleven Ephemera"
 msgstr "Мимолётное (Twenty Eleven)"
 
-#: inc/widgets.php:21
+#: inc/widgets.php:23
 msgid "Use this widget to list your recent Aside, Status, Quote, and Link posts"
 msgstr "Используйте этот виджет для вывода свежих заметок, статусов, цитат и ссылок."
 
-#: inc/theme-options.php:553
+#: inc/theme-options.php:566
 msgid "Layout"
 msgstr "Разметка"
 
@@ -128,7 +117,7 @@ msgstr "Цвет по умолчанию: %s"
 
 #: inc/theme-options.php:298
 msgid "Select a Color"
-msgstr "Выберите цвет"
+msgstr "Выбрать цвет"
 
 #: inc/theme-options.php:191
 msgid "One-column, no sidebar"
@@ -144,7 +133,7 @@ msgstr "Содержимое слева"
 
 #: inc/theme-options.php:156
 msgid "Dark"
-msgstr "Тёмная"
+msgstr "Тёмный"
 
 #: inc/theme-options.php:150
 msgid "Light"
@@ -155,12 +144,12 @@ msgid "Overview"
 msgstr "Обзор"
 
 #: inc/theme-options.php:121
-msgid "<a href=\"http://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
-msgstr "<a href=\"http://ru.forums.wordpress.org/\" target=\"_blank\">Форумы поддержки</a>"
+msgid "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Support Forums</a>"
+msgstr "<a href=\"https://wordpress.org/support/\" target=\"_blank\">Форумы поддержки</a>"
 
 #: inc/theme-options.php:120
 msgid "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Documentation on Theme Options</a>"
-msgstr "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Документация по настройкам темы</a>/"
+msgstr "<a href=\"https://codex.wordpress.org/Appearance_Theme_Options_Screen\" target=\"_blank\">Документация по настройкам темы</a>"
 
 #: inc/theme-options.php:119
 msgid "For more information:"
@@ -194,11 +183,11 @@ msgstr "Настройки темы"
 msgid "Default Layout"
 msgstr "Разметка по умолчанию"
 
-#: inc/theme-options.php:62 inc/theme-options.php:546
+#: inc/theme-options.php:62 inc/theme-options.php:559
 msgid "Link Color"
 msgstr "Цвет ссылок"
 
-#: inc/theme-options.php:56 inc/theme-options.php:529
+#: inc/theme-options.php:56 inc/theme-options.php:542
 msgid "Color Scheme"
 msgstr "Цветовая схема"
 
@@ -234,69 +223,69 @@ msgstr "Главное меню"
 msgid "Page %s"
 msgstr "Страница %s"
 
-#: functions.php:669
+#: functions.php:672
 msgid "<span class=\"sep\">Posted on </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> by </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
 msgstr "<span class=\"sep\">Опубликовано </span><a href=\"%1$s\" title=\"%2$s\" rel=\"bookmark\"><time class=\"entry-date\" datetime=\"%3$s\">%4$s</time></a><span class=\"by-author\"> <span class=\"sep\"> автором </span> <span class=\"author vcard\"><a class=\"url fn n\" href=\"%5$s\" title=\"%6$s\" rel=\"author\">%7$s</a></span></span>"
 
-#: functions.php:650
+#: functions.php:653
 msgid "Reply <span>&darr;</span>"
 msgstr "Ответить <span>&darr;</span>"
 
-#: functions.php:641
+#: functions.php:644
 msgid "Your comment is awaiting moderation."
 msgstr "Ваш комментарий ожидает проверки."
 
 #. translators: 1: date, 2: time
-#: functions.php:632
+#: functions.php:635
 msgid "%1$s at %2$s"
 msgstr "%1$s в %2$s"
 
 #. translators: 1: comment author, 2: date and time
-#: functions.php:626
+#: functions.php:629
 msgid "%1$s on %2$s <span class=\"says\">said:</span>"
 msgstr "%1$s <span class=\"says\">говорит</span> %2$s:"
 
-#: functions.php:609
+#: functions.php:612
 msgid "Pingback:"
 msgstr "Уведомление:"
 
-#: functions.php:511
+#: functions.php:514
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Следующие записи <span class=\"meta-nav\">&rarr;</span>"
 
-#: functions.php:510
+#: functions.php:513
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr "<span class=\"meta-nav\">&larr;</span> Предыдущие записи"
 
-#: functions.php:509 single.php:18
+#: functions.php:512 single.php:18
 msgid "Post navigation"
 msgstr "Навигация по записям"
 
-#: functions.php:485
+#: functions.php:488
 msgid "Footer Area Three"
 msgstr "Область подвала 3"
 
-#: functions.php:475
+#: functions.php:478
 msgid "Footer Area Two"
 msgstr "Область подвала 2"
 
-#: functions.php:467 functions.php:477 functions.php:487
+#: functions.php:470 functions.php:480 functions.php:490
 msgid "An optional widget area for your site footer"
 msgstr "Дополнительная область виджетов для нижней части сайта"
 
-#: functions.php:465
+#: functions.php:468
 msgid "Footer Area One"
 msgstr "Область подвала 1"
 
-#: functions.php:457
+#: functions.php:460
 msgid "The sidebar for the optional Showcase Template"
 msgstr "Боковая колонка для дополнительного шаблона &laquo;Избранное&raquo;"
 
-#: functions.php:455
+#: functions.php:458
 msgid "Showcase Sidebar"
 msgstr "Боковая колонка избранного"
 
-#: functions.php:446
+#: functions.php:449
 msgid "Main Sidebar"
 msgstr "Главная боковая колонка"
 
@@ -352,10 +341,6 @@ msgstr "Сайт работает на %s"
 msgid "Semantic Personal Publishing Platform"
 msgstr "Современная персональная платформа для публикаций"
 
-#: footer.php:28
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
 #: content.php:16
 msgid "Featured"
 msgstr "Избранное"
@@ -388,7 +373,7 @@ msgstr "Цитата"
 msgid "Link"
 msgstr "Ссылка"
 
-#: content-image.php:41 functions.php:675
+#: content-image.php:41 functions.php:678
 msgid "View all posts by %s"
 msgstr "Посмотреть все записи автора %s"
 
@@ -444,7 +429,7 @@ msgstr ", "
 #: content-aside.php:46 content-featured.php:45 content-gallery.php:88
 #: content-image.php:70 content-intro.php:19 content-link.php:46
 #: content-page.php:21 content-quote.php:72 content-single.php:52
-#: content-status.php:59 content.php:82 functions.php:609 functions.php:637
+#: content-status.php:59 content.php:82 functions.php:612 functions.php:640
 #: image.php:41
 msgid "Edit"
 msgstr "Изменить"
@@ -472,11 +457,11 @@ msgstr "Добавить комментарий"
 #: content-page.php:18 content-quote.php:36 content-single.php:24
 #: content-status.php:49 content.php:42 image.php:98
 msgid "Pages:"
-msgstr "Страницы:"
+msgstr "Страниц:"
 
 #: content-aside.php:35 content-gallery.php:34 content-image.php:29
 #: content-link.php:35 content-quote.php:35 content-status.php:48
-#: content.php:41 functions.php:375
+#: content.php:41 functions.php:378
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Читать далее <span class=\"meta-nav\">&rarr;</span>"
 
@@ -495,7 +480,7 @@ msgstr "1"
 #: content-aside.php:24 content-image.php:23 content-link.php:24
 #: content-quote.php:24 content-status.php:24 content.php:30
 msgid "Reply"
-msgstr "Добавить комментарий"
+msgstr "Ответить"
 
 #: content-aside.php:19
 msgid "Aside"
@@ -503,7 +488,7 @@ msgstr "Заметка"
 
 #: comments.php:74
 msgid "Comments are closed."
-msgstr "Комментарии запрещены."
+msgstr "Обсуждение закрыто."
 
 #: comments.php:43 comments.php:64
 msgid "Newer Comments &rarr;"
@@ -591,3 +576,17 @@ msgstr "Запрошенную информацию найти не удалос
 #: 404.php:17
 msgid "This is somewhat embarrassing, isn&rsquo;t it?"
 msgstr "Неприятная новость"
+
+#. #-#-#-#-#  twentyeleven.pot (Twenty Eleven 2.7)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:28
+msgid "https://wordpress.org/"
+msgstr "https://ru.wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "Команда WordPress"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyeleven/"
+msgstr "https://wordpress.org/themes/twentyeleven/"

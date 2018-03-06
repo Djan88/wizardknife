@@ -10,10 +10,8 @@
  */
 ?>
 <div id="jquery-colorbox-plugin-settings" class="postbox">
-  <h3 id="colorbox-settings"><?php _e('Colorbox settings', JQUERYCOLORBOX_TEXTDOMAIN); ?></h3>
-
   <div class="inside">
-
+    <h3 id="colorbox-settings"><?php _e('Colorbox settings', JQUERYCOLORBOX_TEXTDOMAIN); ?></h3>
     <table class="form-table">
       <tr valign="top">
         <th scope="row">

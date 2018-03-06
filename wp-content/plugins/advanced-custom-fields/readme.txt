@@ -1,110 +1,124 @@
 === Advanced Custom Fields ===
 Contributors: elliotcondon
-Tags: custom, field, custom field, advanced, simple fields, magic fields, more fields, repeater, matrix, post, type, text, textarea, file, image, edit, admin
-Requires at least: 3.5.0
-Tested up to: 4.2
+Tags: acf, advanced, custom, field, fields, form, repeater, content
+Requires at least: 3.6.0
+Tested up to: 4.9.9
+Stable tag: 4.4.12
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customise WordPress with powerful, professional and intuitive fields
+Customise WordPress with powerful, professional and intuitive fields.
 
 == Description ==
 
-Advanced Custom Fields is the perfect solution for any wordpress website which needs more flexible data like other Content Management Systems. 
+Use the Advanced Custom Fields plugin to take full control of your WordPress edit screens & custom field data.
 
-* Visually create your Fields
-* Select from multiple input types (text, textarea, wysiwyg, image, file, page link, post object, relationship, select, checkbox, radio buttons, date picker, true / false, repeater, flexible content, gallery and more to come!)
-* Assign your fields to multiple edit pages (via custom location rules)
-* Easily load data through a simple and friendly API
-* Uses the native WordPress custom post type for ease of use and fast processing
-* Uses the native WordPress metadata for ease of use and fast processing
+**Add fields on demand.** Our field builder allows you to quickly and easily add fields to WP edit screens with only the click of a few buttons!
 
-= Field Types =
-* Text (type text, api returns text)
-* Text Area (type text, api returns text)
-* Number (type number, api returns integer)
-* Email (type email, api returns text)
-* Password (type password, api returns text)
-* WYSIWYG (a wordpress wysiwyg editor, api returns html)
-* Image (upload an image, api returns the url)
-* File (upload a file, api returns the url)
-* Select (drop down list of choices, api returns chosen item)
-* Checkbox (tickbox list of choices, api returns array of choices)
-* Radio Buttons ( radio button list of choices, api returns chosen item)
-* True / False (tick box with message, api returns true or false)
-* Page Link (select 1 or more page, post or custom post types, api returns the selected url)
-* Post Object (select 1 or more page, post or custom post types, api returns the selected post objects)
-* Relationship (search, select and order post objects with a tidy interface, api returns the selected post objects)
-* Taxonomy (select taxonomy terms with options to load, display and save, api returns the selected term objects)
-* User (select 1 or more WP users, api returns the selected user objects)
-* Google Maps (interactive map, api returns lat,lng,address data)
-* Date Picker (jquery date picker, options for format, api returns string)
-* Color Picker (WP color swatch picker)
-* Tab (Group fields into tabs)
-* Message (Render custom messages into the fields)
-* Repeater (ability to create repeatable blocks of fields!)
-* Flexible Content (ability to create flexible blocks of fields!)
-* Gallery (Add, edit and order multiple images in 1 simple field)
-* [Custom](http://www.advancedcustomfields.com/resources/tutorials/creating-a-new-field-type/) (Create your own field type!)
+**Add them anywhere.** Fields can be added all over WP including posts, users, taxonomy terms, media, comments and even custom options pages!
 
-= Tested on =
-* Mac Firefox 	:)
-* Mac Safari 	:)
-* Mac Chrome	:)
-* PC Safari 	:)
-* PC Chrome		:)
-* PC Firefox	:)
-* iPhone Safari :)
-* iPad Safari 	:)
-* PC ie7		:S
+**Show them everywhere.** Load and display your custom field values in any theme template file with our hassle free developer friendly functions!
 
-= Website =
-http://www.advancedcustomfields.com/
+= Version 5 Early Access =
 
-= Documentation =
-* [Getting Started](http://www.advancedcustomfields.com/resources/#getting-started)
-* [Field Types](http://www.advancedcustomfields.com/resources/#field-types)
-* [Functions](http://www.advancedcustomfields.com/resources/#functions)
-* [Actions](http://www.advancedcustomfields.com/resources/#actions)
-* [Filters](http://www.advancedcustomfields.com/resources/#filters)
-* [How to guides](http://www.advancedcustomfields.com/resources/#how-to)
-* [Tutorials](http://www.advancedcustomfields.com/resources/#tutorials)
+Advanced Custom Fields version 5 is scheduled for release in mid 2018. This major update introduces new fields, new locations and new features!
 
-= Bug Submission and Forum Support =
-http://support.advancedcustomfields.com/
+To help provide the most seamless update possible, we have included a simple **Early Access** opt-in feature to enable the update now. [Learn more](https://www.advancedcustomfields.com/resources/upgrade-guide-version-5/)
 
-= Please Vote and Enjoy =
-Your votes really make a difference! Thanks.
+= Features =
+* Simple & Intuitive
+* Powerful Functions
+* Over 30 Field Types
+* Extensive Documentation
+* Millions of Users
+
+= Links =
+* [Website](https://www.advancedcustomfields.com)
+* [Documentation](https://www.advancedcustomfields.com/resources/)
+* [Support](https://support.advancedcustomfields.com)
+* [ACF PRO](https://www.advancedcustomfields.com/pro/)
+
+= PRO =
+The Advanced Custom Fields plugin is also available in a professional version which includes more fields, more functionality, and more flexibility! [Learn more](https://www.advancedcustomfields.com/pro/)
 
 
 == Installation ==
 
-1. Upload 'advanced-custom-fields' to the '/wp-content/plugins/' directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Click on the new menu item "Custom Fields" and create your first Custom Field Group!
-4. Your custom field group will now appear on the page / post / template you specified in the field group's location rules!
-5. Read the documentation to display your data: 
+From your WordPress dashboard
+
+1. **Visit** Plugins > Add New
+2. **Search** for "Advanced Custom Fields"
+3. **Activate** Advanced Custom Fields from your Plugins page
+4. **Click** on the new menu item "Custom Fields" and create your first Custom Field Group!
+5. **Read** the documentation to [get started](https://www.advancedcustomfields.com/resources/getting-started-with-acf/)
 
 
 == Frequently Asked Questions ==
 
-= Q. I have a question =
-A. Chances are, someone else has asked it. Check out the support forum at: 
-http://support.advancedcustomfields.com/
+= What kind of support do you provide? =
+
+**Help Desk.** Support is currently provided via our email help desk. Questions are generally answered within 24 hours, with the exception of weekends and holidays. We answer questions related to ACF, it’s usage and provide minor customization guidance. We cannot guarantee support for questions which include custom theme code, or 3rd party plugin conflicts & compatibility. [Open a Support Ticket](http://support.advancedcustomfields.com/new-ticket/)
+
+**Support Forums.** Our Community Forums provide a great resource for searching and finding previously answered and asked support questions. You may create a new thread on these forums, however, it is not guaranteed that you will receive an answer from our support team. This is more of an area for developers to talk to one another, post ideas, plugins and provide basic help. [View the Support Forum](http://support.advancedcustomfields.com)
 
 
 == Screenshots ==
 
-1. Creating the Advanced Custom Fields
+1. Simple & Intuitive
 
-2. Adding the Custom Fields to a page and hiding the default meta boxes
+2. Made for developers
 
-3. The Page edit screen after creating the Advanced Custom Fields
-
-4. Simple and intuitive API. Read the documentation at: http://www.advancedcustomfields.com/resources/
+3. All about fields
 
 
 == Changelog ==
+
+= 4.4.12 =
+* Core: Added Early Access for ACF 5
+* Core: Fixed PHP7 warnings
+* Language: Added Romanian translation - thanks to Corneliu Cîrlan
+
+= 4.4.11 =
+* Core: Improved logic to better delete term meta during 'delete_term' action
+* Core: Fixed bug causing potential conflict between user and post object cache names
+* Language: Updated Italian translation - thanks to Ste Yeu
+
+= 4.4.10 =
+* WYSIWYG field: Fixed JS error preventing tinymce from initializing
+
+= 4.4.9 =
+* Image field: Added nicer 'Edit image' view
+* File field: Added nicer 'Edit file' view
+
+= 4.4.8 =
+* Google Map: Added new 'acf/fields/google_map/api' filter
+
+= 4.4.7 =
+* Relationship field: Fixed bug preventing values from being selected in WP 4.5
+* Google Map field: Fixed bug preventing map to load within repeater field
+* Core: Fixed PHP error when loading ACF values on 'The Events Calendar' (plugin) page
+* Language: Updated Portuguese translation - thanks to Pedro Mendonca
+
+= 4.4.6 =
+* Google Map field: Improved compatibility with 3rd party plugins including Google JS API
+* API: Improved `get_` functions to load value from the current queried object (post, user, term)
+* Core: Added support for new WP 4.5 term edit page
+* Language: Updated Portuguese translation - thanks to Pedro Mendonca
+* Language: Added Welsh translation - thanks to Carl Morris
+* Language: Added Indonesian translation - thanks to Rio Bermano
+
+= 4.4.5 =
+* Core: Fixed metabox title appearing on seamless field groups
+* Language: Updated Portuguese translation
+* Language: Updated Polish translation
+
+= 4.4.4 =
+* Field group: Fixed disabled update button after saving with empty title
+* Core: Minor fixes and improvements
+* Language: Updated Portuguese translation
+* Language: Updated French translation
+* Language: Updated Polish translation
+* Language: Added Finnish translation
 
 = 4.4.3 = 
 * WYSIWYG field: Added compatibility for WP 4.3 filters
@@ -737,7 +751,7 @@ http://support.advancedcustomfields.com/
 * Added new French translation. Thanks to Martin Vauchel @littlbr http://littleboyrunning.com
 * Fixed duplicate WYSIWYG in chrome bug
 * New Location rules: add fields to a user / taxonomy / attachment
-* Bug Fix: Color picker now shows color on page load. Thanks to Kev http://www.popcreative.co.uk
+* Bug Fix: Color picker now shows color on page load. Thanks to Kevin Ruscoe http://github.com/kevdotbadger"
 * CSS tweaks File clearfix, new style for selects with optgroups
 * Simplified get_value to return default value if value == ""
 * API now allows for "option" and "options" for the $post_id value in API functions

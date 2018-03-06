@@ -4,13 +4,15 @@
  */
 
 if ( ! class_exists( 'WP_List_Table' ) ) {
-	require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
+	require_once ABSPATH . 'wp-admin/includes/class-wp-list-table.php';
 }
 
 /**
  * Class WPSEO_GSC_Table
  */
 class WPSEO_GSC_Table extends WP_List_Table {
+
+	const FREE_MODAL_HEIGHT = 140;
 
 	/**
 	 * @var string
@@ -40,20 +42,11 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	private $current_page = 1;
 
 	/**
-	 * @var array
-	 */
-	private $modal_heights = array(
-		'create'         => 350,
-		'no_premium'     => 125,
-		'already_exists' => 150,
-	);
-
-	/**
-	 * The constructor
+	 * Search Console table class constructor (subclasses list table).
 	 *
-	 * @param string $platform
-	 * @param string $category
-	 * @param array  $items
+	 * @param string $platform Platform (desktop, mobile, feature phone).
+	 * @param string $category Type of the issues.
+	 * @param array  $items    Set of the issues to display.
 	 */
 	public function __construct( $platform, $category, array $items ) {
 		parent::__construct();
@@ -62,7 +55,9 @@ class WPSEO_GSC_Table extends WP_List_Table {
 		add_thickbox();
 
 		// Set search string.
-		if ( ( $search_string = filter_input( INPUT_GET, 's' ) ) != '' ) {
+		$search_string = filter_input( INPUT_GET, 's' );
+
+		if ( $search_string !== '' ) {
 			$this->search_string = $search_string;
 		}
 
@@ -89,7 +84,8 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	public function prepare_items() {
 		// Get variables needed for pagination.
 		$this->per_page     = $this->get_items_per_page( 'errors_per_page', $this->per_page );
-		$this->current_page = intval( ( $paged = filter_input( INPUT_GET, 'paged' ) ) ? $paged : 1 );
+		$paged              = filter_input( INPUT_GET, 'paged' );
+		$this->current_page = intval( ( ! empty( $paged ) ) ? $paged : 1 );
 
 		$this->setup_columns();
 		$this->views();
@@ -143,8 +139,8 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	/**
 	 * Default method to display a column
 	 *
-	 * @param array  $item
-	 * @param string $column_name
+	 * @param array  $item        Data array.
+	 * @param string $column_name Column name key.
 	 *
 	 * @return mixed
 	 */
@@ -155,20 +151,23 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	/**
 	 * Checkbox column
 	 *
-	 * @param array $item
+	 * @param array $item Item data array.
 	 *
 	 * @return string
 	 */
 	protected function column_cb( $item ) {
 		return sprintf(
-			'<input type="checkbox" name="wpseo_crawl_issues[]" value="%s" />', $item['url']
+			'<input type="checkbox" name="wpseo_crawl_issues[]" id="cb-%1$s" value="%2$s" /><label for="cb-%1$s" class="screen-reader-text">%3$s</label>',
+			md5( $item['url'] ),
+			$item['url'],
+			__( 'Select redirect', 'wordpress-seo' )
 		);
 	}
 
 	/**
 	 * Formatting the output of the column last crawled into a dateformat
 	 *
-	 * @param array $item
+	 * @param array $item Item data array.
 	 *
 	 * @return string
 	 */
@@ -179,7 +178,7 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	/**
 	 * Formatting the output of the column first detected into a dateformat
 	 *
-	 * @param array $item
+	 * @param array $item Item data array.
 	 *
 	 * @return string
 	 */
@@ -190,7 +189,7 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	/**
 	 * URL column
 	 *
-	 * @param array $item
+	 * @param array $item Item data array.
 	 *
 	 * @return string
 	 */
@@ -198,16 +197,15 @@ class WPSEO_GSC_Table extends WP_List_Table {
 		$actions = array();
 
 		if ( $this->can_create_redirect() ) {
-			/**
-			 * Modal box
-			 */
-			$modal_height = $this->modal_box( $item['url'] );
+			/** Gets the modal box */
+			$modal = $this->get_modal_box( $item['url'] );
+			$modal->load_view( md5( $item['url'] ) );
 
-			$actions['create_redirect'] = '<a title="' . __( 'Create a redirect', 'wordpress-seo' ) . '" href="#TB_inline?width=600&height=' . $this->modal_heights[ $modal_height ] . '&inlineId=redirect-' . md5( $item['url'] ) . '" class="thickbox">' . __( 'Create redirect', 'wordpress-seo' ) . '</a>';
+			$actions['create_redirect'] = '<a href="#TB_inline?width=600&height=' . $modal->get_height() . '&inlineId=redirect-' . md5( $item['url'] ) . '" class="thickbox wpseo-open-gsc-redirect-modal aria-button-if-js">' . __( 'Create redirect', 'wordpress-seo' ) . '</a>';
 		}
 
-		$actions['view']        = '<a href="' . $item['url'] . '" target="_blank">' . __( 'View', 'wordpress-seo' ) . '</a>';
-		$actions['markasfixed'] = '<a href="javascript:wpseo_mark_as_fixed(\'' . urlencode( $item['url'] ) . '\');">' . __( 'Mark as fixed', 'wordpress-seo' ) . '</a>';
+		$actions['view']        = '<a href="' . home_url( $item['url'] ) . '" target="_blank">' . __( 'View', 'wordpress-seo' ) . '</a>';
+		$actions['markasfixed'] = '<a href="javascript:wpseoMarkAsFixed(\'' . urlencode( $item['url'] ) . '\');">' . __( 'Mark as fixed', 'wordpress-seo' ) . '</a>';
 
 		return sprintf(
 			'<span class="value">%1$s</span> %2$s',
@@ -225,17 +223,18 @@ class WPSEO_GSC_Table extends WP_List_Table {
 
 	/**
 	 * Check if the current category allow creating redirects
+	 *
 	 * @return bool
 	 */
 	private function can_create_redirect() {
-		return in_array( $this->current_view, array( 'soft_404', 'not_found', 'access_denied' ) );
+		return in_array( $this->current_view, array( 'soft_404', 'not_found', 'access_denied' ), true );
 	}
 
 	/**
 	 * Setting the table navigation
 	 *
-	 * @param int $total_items
-	 * @param int $posts_per_page
+	 * @param int $total_items    Total number of items.
+	 * @param int $posts_per_page Number of items per page.
 	 */
 	private function set_pagination( $total_items, $posts_per_page ) {
 		$this->set_pagination_args( array(
@@ -304,17 +303,20 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	/**
 	 * Doing the sorting of the issues
 	 *
-	 * @param array $a
-	 * @param array $b
+	 * @param array $a First data set for comparison.
+	 * @param array $b Second data set for comparison.
 	 *
 	 * @return int
 	 */
 	private function do_reorder( $a, $b ) {
+		$orderby = filter_input( INPUT_GET, 'orderby' );
+		$order   = filter_input( INPUT_GET, 'order' );
+
 		// If no sort, default to title.
-		$orderby = ( $orderby = filter_input( INPUT_GET, 'orderby' ) ) ? $orderby : 'url';
+		$orderby = ( ! empty( $orderby ) ) ? $orderby : 'url';
 
 		// If no order, default to asc.
-		$order = ( $order = filter_input( INPUT_GET, 'order' ) ) ? $order : 'asc';
+		$order = ( ! empty( $order ) ) ? $order : 'asc';
 
 		// When there is a raw field of it, sort by this field.
 		if ( array_key_exists( $orderby . '_raw', $a ) && array_key_exists( $orderby . '_raw', $b ) ) {
@@ -329,57 +331,38 @@ class WPSEO_GSC_Table extends WP_List_Table {
 	}
 
 	/**
-	 * Modal box
+	 * Checks if premium is loaded, if not the nopremium modal will be shown. Otherwise it will load the premium one.
 	 *
-	 * @param string $url
+	 * @param string $url URL string.
 	 *
-	 * @return string
+	 * @return WPSEO_GSC_Modal Instance of the GSC modal.
 	 */
-	private function modal_box( $url ) {
-		$current_redirect = false;
-		$view_type        = $this->modal_box_type( $url, $current_redirect );
+	private function get_modal_box( $url ) {
+		if ( defined( 'WPSEO_PREMIUM_FILE' ) && class_exists( 'WPSEO_Premium_GSC_Modal' ) ) {
+			static $premium_modal;
 
-		require WPSEO_PATH . '/admin/google_search_console/views/gsc-create-redirect.php';
-
-		return $view_type;
-	}
-
-	/**
-	 * Determine which model box type should be rendered
-	 *
-	 * @param string $url
-	 * @param string $current_redirect
-	 *
-	 * @return string
-	 */
-	private function modal_box_type( $url, &$current_redirect ) {
-		if ( defined( 'WPSEO_PREMIUM_FILE' ) && class_exists( 'WPSEO_URL_Redirect_Manager' ) ) {
-			static $redirect_manager;
-
-			if ( ! $redirect_manager ) {
-				$redirect_manager = new WPSEO_URL_Redirect_Manager();
+			if ( ! $premium_modal ) {
+				$premium_modal = new WPSEO_Premium_GSC_Modal();
 			}
 
-			if ( $current_redirect = $redirect_manager->search_url( $url ) ) {
-				return 'already_exists';
-			}
-
-			return 'create';
+			return $premium_modal->show( $url );
 		}
 
-		return 'no_premium';
+		return new WPSEO_GSC_Modal(
+			dirname( __FILE__ ) . '/views/gsc-redirect-nopremium.php',
+			self::FREE_MODAL_HEIGHT,
+			array( 'url' => $url )
+		);
 	}
-
 
 	/**
 	 * Showing the hidden fields used by the AJAX requests
 	 *
-	 * @param string $platform
+	 * @param string $platform Platform (desktop, mobile, feature phone).
 	 */
 	private function show_fields( $platform ) {
-		echo "<input type='hidden' name='wpseo_gsc_nonce' value='" . wp_create_nonce( 'wpseo_gsc_nonce' ) . "' />";
-		echo "<input id='field_platform' type='hidden' name='platform' value='{$platform}' />";
-		echo "<input id='field_category' type='hidden' name='category' value='{$this->current_view}' />";
+		echo '<input type="hidden" name="wpseo_gsc_nonce" value="' . esc_attr( wp_create_nonce( 'wpseo_gsc_nonce' ) ) . '" />';
+		echo '<input id="field_platform" type="hidden" name="platform" value="' . esc_attr( $platform ) . '" />';
+		echo '<input id="field_category" type="hidden" name="category" value="' . esc_attr( $this->current_view ) . '" />';
 	}
-
 }
